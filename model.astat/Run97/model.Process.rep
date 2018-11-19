@@ -1,0 +1,11 @@
+Name	Total_Claim_Count	Current_Claim_Count	Average_Claim_Count	Capacity	Max_Claims	Min_Claims	Utilization	Average_Time_Per_Claim	Average_Wait_Time	Total_Traffic_Count	Current_Traffic_Count	Average_Traffic_Count	Traffic_Limit	Max_Traffic	Min_Traffic	Traffic_Utilization	Traffic_Ave_Time_Per_Claim	Traffic_Ave_Wait_Time	Total_Waiting	Current_Waiting	Max_Waiting	Min_Waiting	Average_Waiting	Average_Time_Per_Wait	
+@10:00:00:00.00
+P_Init	1	0	0.000000	Infinite	1	0		0.000000		1	0	0.000000	Infinite	1	0		0.000000		0	0	0	0	0.000000	0.000000	
+P_Creation	2	2	2.000000	Infinite	2	0		864000.000000		2	2	2.000000	Infinite	2	0		864000.000000		0	0	0	0	0.000000	0.000000	
+P_Cutting	351	38	18.982842	Infinite	38	0		46726.995705		351	38	18.982842	Infinite	38	0		46726.995705		0	0	0	0	0.000000	0.000000	
+P_Painting	3146	4	3.155938	Infinite	4	0		866.729274		3146	4	3.155938	Infinite	4	0		866.729274		0	0	0	0	0.000000	0.000000	
+P_Lathes	3142	8	8.134919	Infinite	13	0		2236.973148		3142	8	8.134919	Infinite	13	0		2236.973148		0	0	0	0	0.000000	0.000000	
+P_DownTimePainting	1	1	1.000000	Infinite	1	0		864000.000000		1	1	1.000000	Infinite	1	0		864000.000000		0	0	0	0	0.000000	0.000000	
+P_DownTimeCutters	2	2	2.000000	Infinite	2	0		864000.000000		2	2	2.000000	Infinite	2	0		864000.000000		0	0	0	0	0.000000	0.000000	
+P_DownTimeLathes	3	3	3.000000	Infinite	3	0		864000.000000		3	3	3.000000	Infinite	3	0		864000.000000		0	0	0	0	0.000000	0.000000	
+P_Unloading	1571	0	0.000000	Infinite	1	0		0.000000		1571	0	0.000000	Infinite	1	0		0.000000		0	0	0	0	0.000000	0.000000	

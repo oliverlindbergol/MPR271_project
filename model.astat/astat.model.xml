@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<AutoStatModelDefinition ASVersion="5.0.5.16" ASCultureInfo="sv-SE" ASRepOpt="True">
+	<LastChanged>
+		<Entry Key="model.exe" Value="1460646290" />
+		<Entry Key="model.dll" Value="1542276748" />
+	</LastChanged>
+	<AutoStat.DataFileContainer />
+	<AutoStat.FactorContainer>
+		<AutoStat.AMFactor FactorName="model:Q_BufferLathe(1):Default Capacity" SystemName="model" EntityType="Queue" EntityName="Q_BufferLathe(1)" AttributeName="Default_Capacity" />
+		<AutoStat.AMFactor FactorName="model:Q_BufferLathe(2):Default Capacity" SystemName="model" EntityType="Queue" EntityName="Q_BufferLathe(2)" AttributeName="Default_Capacity" />
+		<AutoStat.AMFactor FactorName="model:Q_BufferLathe(3):Default Capacity" SystemName="model" EntityType="Queue" EntityName="Q_BufferLathe(3)" AttributeName="Default_Capacity" />
+		<AutoStat.AMFactor FactorName="model:VI_BatchSize:Initial Value" SystemName="model" EntityType="Variable" EntityName="VI_BatchSize" AttributeName="Initial_Value" />
+		<AutoStat.AMFactor FactorName="model:Q_BufferPainting:Default Capacity" SystemName="model" EntityType="Queue" EntityName="Q_BufferPainting" AttributeName="Default_Capacity" />
+	</AutoStat.FactorContainer>
+	<AutoStat.ResponseContainer>
+		<AutoStat.AMResponse ReportAs="raw total" ReportTime="1" ReportUnits="Days" XMLSerializeKeyID="-2147483647" Name="model:Q_Final:Total Claim Count" CacheResults="False" SystemName="model" EntityType="Queue" EntityName="Q_Final" StatisticName="Total Claim Count" />
+	</AutoStat.ResponseContainer>
+	<AutoStat.AuditContainer AuditResultLimit="30" ErrorKeyWords="Error Warning" />
+	<AutoStat.AnalysisContainer>
+		<AutoStat.SingleScenarioAnalysis CRN="0" IncludeInDoAll="True" Name="Single Scenario" XMLSerialize_Replications="15" HasCustomRunControl="False" WarmupTime="0" WarmupUnits="Days" SnapLength="10" SnapUnits="Days" FirstRun="1" />
+		<AutoStat.SingleScenarioAnalysis CRN="0" IncludeInDoAll="True" Name="Single Scenario 1" XMLSerialize_Replications="15" HasCustomRunControl="False" WarmupTime="0" WarmupUnits="Days" SnapLength="10" SnapUnits="Days" FirstRun="1" />
+		<AutoStat.MultFactorAnalysis NumberOfSamples="1" CRN="1" IncludeInDoAll="True" Name="Vary Multiple Factors" XMLSerialize_Replications="1" HasCustomRunControl="False" WarmupTime="0" WarmupUnits="Days" SnapLength="10" SnapUnits="Days" FirstRun="5">
+			<VaryFactorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferLathe(1):Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="6" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferLathe(2):Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="6" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferLathe(3):Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="6" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferPainting:Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="8" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:VI_BatchSize:Initial Value" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="6" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+			</VaryFactorData>
+		</AutoStat.MultFactorAnalysis>
+		<AutoStat.MultFactorAnalysis NumberOfSamples="10" CRN="1" IncludeInDoAll="True" Name="Vary Multiple Factors 1" XMLSerialize_Replications="10" HasCustomRunControl="False" WarmupTime="0" WarmupUnits="Days" SnapLength="10" SnapUnits="Days" FirstRun="328">
+			<VaryFactorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferLathe(1):Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="4" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="4" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="1" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferLathe(2):Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="4" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="4" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="1" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferLathe(3):Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="6" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="6" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="1" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:Q_BufferPainting:Default Capacity" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="8" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="8" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="1" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+				<AutoStat.FactorEditorData FactorName="model:VI_BatchSize:Initial Value" Type="BeginEndIncrement">
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="2" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+					<AutoStat.EditorData Value1="1" Value2="" Value3="" Value4="" Value5="" BoolValue="False" DataType="AutoStat.IntegerType" />
+				</AutoStat.FactorEditorData>
+			</VaryFactorData>
+		</AutoStat.MultFactorAnalysis>
+	</AutoStat.AnalysisContainer>
+	<AutoStat.ServerContainer>
+		<AutoStat.RunServer Enabled="True" Name="Local" NumRuns="1" Port="0" Version="12.6.1.19" />
+	</AutoStat.ServerContainer>
+	<AutoStat.ModelProperties AutoSave="True" AutoSaveTime="30" AutoSaveTimeUnits="Minutes" CRN="False" ErrorRunLimit="5" MaximumExecutionTime="1" MaximumExecutionTimeUnits="Minutes" Random="True" RepeatErrorRuns="True" MessageFileViewer="notepad.exe" SampleTime="10" SampleTimeUnits="Days" SeedIncrement="10000" StopLongRuns="True" Warmup="False" WarmupTime="0" WarmupTimeUnits="Days" DefaultCL="0.9" />
+</AutoStatModelDefinition>

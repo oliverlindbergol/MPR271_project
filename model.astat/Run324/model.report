@@ -1,0 +1,93 @@
+*** AutoMod 12.6 ***
+Model model
+Statistics at Absolute Clock = 10:00:00:00.00, Relative Clock = 10:00:00:00.00
+CPU time: Absolute: 2.67 sec, Relative: 2.67 sec
+
+Statistics for Process System "model"
+
+Process Statistics
+Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait
+========================================================================================
+P_Init                     1     0     0.00       --     1     0     --       0.00 
+P_Creation                 2     2     2.00       --     2     0     --  864000.00 
+P_Cutting                351    35    17.12       --    35     0     --   42133.48 
+P_Painting              3174     6     8.93       --    12     0     --    2430.08 
+P_Lathes                3168    13    14.75       --    21     0     --    4022.40 
+P_DownTimePainting         1     1     1.00       --     1     0     --  864000.00 
+P_DownTimeCutters          2     2     2.00       --     2     0     --  864000.00 
+P_DownTimeLathes           3     3     3.00       --     3     0     --  864000.00 
+P_Unloading             2640     0     0.00       --     1     0     --       0.00 
+
+Process Traffic Limit Statistics
+Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait
+========================================================================================
+P_Init                     1     0     0.00 Infinite     1     0     --       0.00 
+P_Creation                 2     2     2.00 Infinite     2     0     --  864000.00 
+P_Cutting                351    35    17.12 Infinite    35     0     --   42133.48 
+P_Painting              3174     6     8.93 Infinite    12     0     --    2430.08 
+P_Lathes                3168    13    14.75 Infinite    21     0     --    4022.40 
+P_DownTimePainting         1     1     1.00 Infinite     1     0     --  864000.00 
+P_DownTimeCutters          2     2     2.00 Infinite     2     0     --  864000.00 
+P_DownTimeLathes           3     3     3.00 Infinite     3     0     --  864000.00 
+P_Unloading             2640     0     0.00 Infinite     1     0     --       0.00 
+
+Queue Statistics
+Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait
+========================================================================================
+Space                   3534    41    23.12 Infinite    41     0     --    5652.52 
+Q_BufferCutter(1)          0     0     0.00        1     0     0  0.000       0.00       0.00
+Q_BufferCutter(2)          0     0     0.00        1     0     0  0.000       0.00       0.00
+Q_Cutter(1)              156     1     1.00        1     1     0  0.999    5533.33   33863.65
+Q_Cutter(2)              162     1     1.00        1     1     0  0.997    5318.75   40371.23
+Q_BufferPainting        3174     0     3.37        6     6     0  0.562     918.50       0.00
+Q_Painting               529     1     0.93        1     1     0  0.925    1511.58     334.86
+Q_PaintingUnloading     3168     0     1.08        6     5     0  0.180     294.08       0.00
+Q_BufferLathe(1)        1051     3     3.56        6     5     0  0.593    2925.29       0.00
+Q_BufferLathe(2)        1057     3     3.76        4     4     0  0.939    3071.60     881.39
+Q_BufferLathe(3)        1060     4     3.37        6     5     0  0.561    2744.59       0.00
+Q_Lathe(1)              1048     1     1.00        1     1     0  0.995     820.44    2925.29
+Q_Lathe(2)              1054     1     1.00        1     1     0  0.996     816.60    3071.60
+Q_Lathe(3)              1056     1     1.00        1     1     0  0.996     814.75    2744.59
+Q_Final                 3155     0     0.00        1     1     0  0.000       0.00       0.00
+Q_DummyPainting         2645     5     4.63        5     5     0  0.925    1511.58     334.86
+
+Order List Statistics
+Name              Total   Cur  Average   Max   Min    Av_Time
+=============================================================
+OL_PaintBufferFull     291     0     0.22     2     0     656.03
+OL_LatheBufferFull       0     0     0.00     0     0       0.00
+OL_PaintBatch      2645     0     2.14     5     0     700.36
+OL_WaitBatchPainting    2645     5     4.63     5     0    1511.58
+OL_PaintingUnloading     188     0     0.18     1     0     849.40
+
+Order List Backordered Statistics
+Name              Total   Cur  Average   Max   Min  Fulfilled
+=============================================================
+OL_PaintBufferFull       0     0     0.00     0     0          0
+OL_LatheBufferFull       0     0     0.00     0     0          0
+OL_PaintBatch         0     0     0.00     0     0          0
+OL_WaitBatchPainting       0     0     0.00     0     0          0
+OL_PaintingUnloading       0     0     0.00     0     0          0
+
+Resource Statistics
+Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait     State     
+====================================================================================================
+R_Cutter(1)             1557     1     0.83        1     1     0  0.832     461.83       4.14     Up   ----      
+R_Cutter(2)             1621     1     0.83        1     1     0  0.829     441.79       3.32     Up   ----      
+R_Painting              1058     1     0.71        1     1     0  0.712     581.81       3.02     Up   ----      
+R_Lathe(1)              1048     1     0.95        1     1     0  0.950     783.20       0.00     Up   ----      
+R_Lathe(2)              1054     1     0.95        1     1     0  0.952     780.60       0.00     Up   ----      
+R_Lathe(3)              1056     1     0.95        1     1     0  0.951     778.11       0.00     Up   ----      
+
+Random Number Streams
+Name                 Total 
+============================
+stream0              11389
+stream_R_Cutter_1(1) 0
+stream_R_Cutter_1(2) 0
+stream_R_Painting_1  0
+stream_R_Lathe_1(1)  0
+stream_R_Lathe_1(2)  0
+stream_R_Lathe_1(3)  0
+
+
