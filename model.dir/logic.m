@@ -8,7 +8,7 @@ begin model initialization function
 end
 
 //Test change 1
-//Hej
+//Test change 2
 
 begin P_Init arriving procedure
 	//Hej
