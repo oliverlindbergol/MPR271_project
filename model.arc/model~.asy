@@ -51,7 +51,7 @@ picpos begx -70.65 begy -5.91029527559055 begz 3.75078781167979 endx -69.65 endy
 1 1 1 1 1 0 0
 end
 LDTYPE name L_Product 0 dis
-picpos begx -70.65 begy 5.91029527559055 begz -3.75078781167979 endx -69.65 endy 5.91029527559055 endz -3.75078781167979 upy 0.53582679965216 upz 0.844327922536335
+picpos begx -71 begy -12 endx -70 endy -12 upy 0.53582679965216 upz 0.844327922536335
  color 1 template Feet
 700 17
 1 1 0 1 1 none
@@ -59,11 +59,11 @@ picpos begx -70.65 begy 5.91029527559055 begz -3.75078781167979 endx -69.65 endy
 310 0
 1 1 1 1 1 0 0
 end
-LDTYPE name L_DownPainting 0
-picpos endx 1
- template Feet
+LDTYPE name L_DownPainting 0 dis
+picpos begx -23 begy 23 endx -22 endy 23
+ color 0 template Feet
 700 17
-2 2 0 1 1 none
+0 0 0 1 1 none
 1
 310 0
 1 1 1 1 1 0 0
@@ -307,6 +307,8 @@ begin model initialization function
 	create 3 loads of load type L_DownLathes to P_DownTimeLathes
 	return 0
 end
+
+//Test change
 
 begin P_Init arriving procedure
 	/* Set cycle times for Cutters */
