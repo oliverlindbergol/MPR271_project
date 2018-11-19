@@ -8,9 +8,10 @@ begin model initialization function
 end
 
 //Test change 1
-//Test change 2
+//Hej
 
 begin P_Init arriving procedure
+	//Hej
 	/* Set cycle times for Cutters */
 	//Triagular min, mode,max
 	set VI_CycleTimeCutter(1,1) = 5
