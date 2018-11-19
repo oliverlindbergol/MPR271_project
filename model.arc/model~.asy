@@ -51,7 +51,7 @@ picpos begx -70.65 begy -5.91029527559055 begz 3.75078781167979 endx -69.65 endy
 1 1 1 1 1 0 0
 end
 LDTYPE name L_Product 0 dis
-picpos begx -30 begy -12 endx -29 endy -12 upy 0.53582679965216 upz 0.844327922536335
+picpos begx -62 begy -17 endx -61 endy -17 upy 0.53582679965216 upz 0.844327922536335
  color 1 template Feet
 700 17
 1 1 0 1 1 none
