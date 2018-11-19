@@ -7,11 +7,10 @@ begin model initialization function
 	return 0
 end
 
-//Test change 1.2
+//Test change 1
 //Test change 2
 
 begin P_Init arriving procedure
-	//Hej
 	/* Set cycle times for Cutters */
 	//Triagular min, mode,max
 	set VI_CycleTimeCutter(1,1) = 5
