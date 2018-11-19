@@ -51,7 +51,7 @@ picpos begx -70.65 begy -5.91029527559055 begz 3.75078781167979 endx -69.65 endy
 1 1 1 1 1 0 0
 end
 LDTYPE name L_Product 0 dis
-picpos begx -19 begy -24 endx -18 endy -24 upy 0.53582679965216 upz 0.844327922536335
+picpos begx -70 begy -12 endx -69 endy -12 upy 0.53582679965216 upz 0.844327922536335
  color 1 template Feet
 700 17
 1 1 0 1 1 none
@@ -308,7 +308,8 @@ begin model initialization function
 	return 0
 end
 
-//Test change
+//Test change 1
+//Test change 2
 
 begin P_Init arriving procedure
 	/* Set cycle times for Cutters */
