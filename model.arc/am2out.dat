@@ -4,6 +4,9 @@ NOT using Overlays
 rotate
 new gdi
 setHilight
+setHilight
+setHilight
+setHilight
 getHilight
 getHilight
 getHilight
