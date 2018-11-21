@@ -1,7 +1,0 @@
-Name	Total_Usage	Current_Usage	Average_Usage	Maximum_Usage	Minimum_Usage	Average_Time_Usage	Total_Backorders_Filled	Total_Backordered	Current_Backordered	Average_Backordered	Maximum_Backordered	Minimum_Backordered	
-@10:00:00:00.00
-OL_PaintBufferFull	277	0	0.228426	2	0	712.492607	0(null)0	0	0.000000	0	0	
-OL_LatheBufferFull	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
-OL_PaintBatch	2637	2	2.155380	5	0	706.199498	0(null)0	0	0.000000	0	0	
-OL_WaitBatchPainting	2635	5	4.573000	5	0	1499.458101	0(null)0	0	0.000000	0	0	
-OL_PaintingUnloading	179	0	0.174304	1	0	841.333029	0(null)0	0	0.000000	0	0	

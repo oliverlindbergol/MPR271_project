@@ -1,8 +1,0 @@
-Name	Total_Claim_Count	Current_Claim_Count	Average_Claim_Count	Capacity	Max_Claims	Min_Claims	Utilization	Average_Time_Per_Claim	Average_Wait_Time	Status	State	Total_Waiting	Current_Waiting	Max_Waiting	Min_Waiting	Average_Waiting	Average_Time_Per_Wait	Total_Down	Current_Down	Max_Down	Min_Down	Average_Down	Average_Down_Time	
-@10:00:00:00.00
-R_Cutter(1)	1517	1	0.81	1	1	0	0.806	458.90	2.758		Down		4	0	1	0	0.004843	1046.119583	33	1	1	0	0.060494	1583.842688	
-R_Cutter(2)	1545	1	0.78	1	1	0	0.784	438.37	8.996		Down		12	0	1	0	0.016086	1158.194370	38	1	1	0	0.070523	1603.460168	
-R_Painting	1018	0	0.69	1	1	0	0.688	584.32	6.013		Up		8	0	1	0	0.007085	765.150976	23	0	1	0	0.032010	1202.446178	
-R_Lathe(1)	1003	1	0.91	1	1	0	0.908	782.35	1.078		Up		2	0	1	0	0.001251	540.488676	66	0	1	0	0.045899	600.856097	
-R_Lathe(2)	1050	1	0.95	1	1	0	0.949	781.03	0.000		Up		0	0	0	0	0.000000	0.000000	65	0	1	0	0.045154	600.206488	
-R_Lathe(3)	991	1	0.89	1	1	0	0.890	775.69	0.735		Up		1	0	1	0	0.000843	728.099956	65	0	1	0	0.043969	584.447816	

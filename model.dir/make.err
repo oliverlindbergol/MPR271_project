@@ -1,9 +1,0 @@
-Processing build commands for the model model...
-model~model.c
-model~init1.c
-logic.c
-Linking model.dll...
-   Creating library model.lib and object model.exp
-Generating model.exe...
-        1 file(s) copied.
-

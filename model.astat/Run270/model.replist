@@ -1,6 +1,0 @@
-MODEL_SYSTEM_REP	model.Model.rep
-MODEL_PROCESS_REP	model.Process.rep
-MODEL_QUEUE_REP	model.Queue.rep
-MODEL_ORDERLIST_REP	model.OrderList.rep
-MODEL_RESOURCE_REP	model.Resource.rep
-MODEL_STREAM_REP	model.Stream.rep
