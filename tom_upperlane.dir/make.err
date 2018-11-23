@@ -1,0 +1,13 @@
+Processing build commands for the model tom_upperlane...
+tom_upperlane~model.c
+tom_upperlane~init1.c
+upperlanelogic.c
+polisher.c
+init.c
+downtimes.c
+surfacetreatment.c
+Linking tom_upperlane.dll...
+   Creating library tom_upperlane.lib and object tom_upperlane.exp
+Generating tom_upperlane.exe...
+        1 file(s) copied.
+

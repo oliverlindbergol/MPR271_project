@@ -1,0 +1,7 @@
+VERSION 12.6.1.19
+UNITS Feet Seconds
+RNSET 1
+DRAWPOS minx -119.99998687664 maxx 51.5499967191601 miny -46.9999967191601 maxy 60.9625 minz 0 maxz 4 trx 0 try 0
+PROCSYS name tom_upperlane~
+	SYSPOS endx 1
+CONTROL snaplen 1600 Hours counts 1 autorep

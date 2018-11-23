@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<AutoStatModelDefinition ASVersion="5.0.5.16" ASCultureInfo="sv-SE" ASRepOpt="True">
+	<LastChanged>
+		<Entry Key="tom_upperlane.exe" Value="1460646290" />
+		<Entry Key="tom_upperlane.dll" Value="1542880985" />
+	</LastChanged>
+	<AutoStat.DataFileContainer />
+	<AutoStat.FactorContainer />
+	<AutoStat.ResponseContainer />
+	<AutoStat.AuditContainer AuditResultLimit="30" ErrorKeyWords="Error Warning" />
+	<AutoStat.AnalysisContainer />
+	<AutoStat.ServerContainer>
+		<AutoStat.RunServer Enabled="True" Name="Local" NumRuns="1" Port="0" Version="12.6.1.19" />
+	</AutoStat.ServerContainer>
+	<AutoStat.ModelProperties AutoSave="True" AutoSaveTime="30" AutoSaveTimeUnits="Minutes" CRN="True" ErrorRunLimit="5" MaximumExecutionTime="1" MaximumExecutionTimeUnits="Days" Random="True" RepeatErrorRuns="True" MessageFileViewer="notepad.exe" SampleTime="10" SampleTimeUnits="Days" SeedIncrement="10000" StopLongRuns="False" Warmup="True" WarmupTime="1" WarmupTimeUnits="Days" DefaultCL="0.9" />
+</AutoStatModelDefinition>
