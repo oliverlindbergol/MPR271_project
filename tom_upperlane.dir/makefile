@@ -41,7 +41,7 @@ GROUP_1 = "tom_upperlane~model.obj" \
 	"polisher.obj" \
 	"init.obj" \
 	"downtimes.obj" \
-	"surfacetreatment.obj"
+	"lowerlane.obj"
 
 OBJECTS =  $(GROUP_1) 
 OBJ_MODULES	= $(OBJECTS) $(USER_OBJS)
@@ -74,8 +74,8 @@ $(MODELNAME) : $(DLL_NAME)
 "downtimes.obj" : "downtimes.c" $(MODEL_HEADERS)
 	$(CC) $(C_OPTIONS) "downtimes.c"
 
-"surfacetreatment.obj" : "surfacetreatment.c" $(MODEL_HEADERS)
-	$(CC) $(C_OPTIONS) "surfacetreatment.c"
+"lowerlane.obj" : "lowerlane.c" $(MODEL_HEADERS)
+	$(CC) $(C_OPTIONS) "lowerlane.c"
 
 
 $(DLL_NAME) : $(OBJ_MODULES)

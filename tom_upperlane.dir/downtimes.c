@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Hopslagning1\tom_upperlane.dir\
-// Generated:	Fri Nov 23 08:44:50 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\tom_upperlane.dir\
+// Generated:	Sat Nov 24 12:19:24 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -85,7 +85,7 @@ Label2: ; // Step 2
 				}
 				{
 					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimePolishers", P_DownTimePolishers_arriving, localactor, 6);
-					return usefor(am2_R_MaintenanceGuy, 1, this, P_DownTimePolishers_arriving, Step 3, am_localargs, ToModelTime(gamma1(am2_stream0, 12, 2), UNITMINUTES));
+					return usefor(am2_R_Maintenance, 1, this, P_DownTimePolishers_arriving, Step 3, am_localargs, ToModelTime(gamma1(am2_stream0, 12, 2), UNITMINUTES));
 Label3: ; // Step 3
 				}
 				{
@@ -377,6 +377,63 @@ LabelRet: ;
 	return retval;
 } /* end of P_DownTimeGrinder2_arriving */
 
+static int32
+P_DownTimeMeasure_arriving(load* this, int32 step, void* args)
+{
+	void* am_localargs = NULL;
+	load* localactor = this;
+	int32 retval = Continue;
+	AMDebuggerBeginRoutine("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", localactor);
+	AMDebuggerParams("tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 0, NULL, NULL, NULL);
+	switch (step) { /* Make the step switcher */
+	case Step 1: goto Label1;
+	case Step 2: goto Label2;
+	case Step 3: goto Label3;
+	case Step 4: goto Label4;
+	default: message("Bad step number %ld.", step);
+	}
+	retval = Error;
+	goto LabelRet;
+Label1: ;  /* Step1 */
+	{
+		{
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 62);
+			while (1 == 1) {
+				{
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 63);
+					if (waitfor(ToModelTime(exponential(am2_stream0, 20), UNITMINUTES), this, P_DownTimeMeasure_arriving, Step 2, am_localargs) == Delayed)
+						return Delayed;
+Label2: ; // Step 2
+				}
+				{
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 64);
+					downrsrc(am2_R_Measure);
+				}
+				{
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 65);
+					return usefor(am2_R_Inspector, 1, this, P_DownTimeMeasure_arriving, Step 3, am_localargs, ToModelTime(1, UNITSECONDS));
+Label3: ; // Step 3
+				}
+				{
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 66);
+					if (waitfor(ToModelTime(2.5000000000000000, UNITMINUTES), this, P_DownTimeMeasure_arriving, Step 4, am_localargs) == Delayed)
+						return Delayed;
+Label4: ; // Step 4
+				}
+				{
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 67);
+					uprsrc(am2_R_Measure);
+				}
+			}
+		}
+	}
+LabelRet: ;
+	if (am_localargs)
+		xfree(am_localargs);
+	AMDebuggerEndRoutine("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor);
+	return retval;
+} /* end of P_DownTimeMeasure_arriving */
+
 
 
 /* init function for downtimes.m */
@@ -389,5 +446,6 @@ model_downtimes_init(struct model_struct* data)
 	data->am_P_DownTimeTurner2->aprc = P_DownTimeTurner2_arriving;
 	data->am_P_DownTimeGrinder1->aprc = P_DownTimeGrinder1_arriving;
 	data->am_P_DownTimeGrinder2->aprc = P_DownTimeGrinder2_arriving;
+	data->am_P_DownTimeMeasure->aprc = P_DownTimeMeasure_arriving;
 }
 

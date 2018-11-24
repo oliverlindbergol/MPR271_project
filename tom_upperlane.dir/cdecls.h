@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Hopslagning1\tom_upperlane.dir\
-// Generated:	Thu Nov 22 15:26:02 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\tom_upperlane.dir\
+// Generated:	Sat Nov 24 12:20:16 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -29,6 +29,10 @@
 #undef am2_Q_DummyUnloadingArea
 #define am2_Q_DummyUnloadingArea am_model.am_Q_DummyUnloadingArea
 #undef XLClear
+#undef am2_Q_Packaging
+#define am2_Q_Packaging am_model.am_Q_Packaging
+#undef am2_P_Packaging
+#define am2_P_Packaging am_model.am_P_Packaging
 #undef OPCFlushWrite
 #undef OPCInit
 #undef SetSocketMessages
@@ -58,14 +62,14 @@
 #define am2_L_DownTurner2 am_model.am_L_DownTurner2
 #undef Fquetoggle
 #undef OPCWriteStringWait
+#undef am2_AI_InspectionResult
+#define am2_AI_InspectionResult am_model.am_AI_InspectionResult
 #undef am2_AI_CutType
 #define am2_AI_CutType am_model.am_AI_CutType
 #undef am2_Q_LoadingProduct
 #define am2_Q_LoadingProduct am_model.am_Q_LoadingProduct
 #undef am2_AI_ProdType
 #define am2_AI_ProdType am_model.am_AI_ProdType
-#undef am2_R_MaintenanceGuy
-#define am2_R_MaintenanceGuy am_model.am_R_MaintenanceGuy
 #undef am2_Q_LoadingFixture
 #define am2_Q_LoadingFixture am_model.am_Q_LoadingFixture
 #undef am2_VI_PrevTurner
@@ -101,8 +105,6 @@
 #undef am2_L_DownTurner1
 #define am2_L_DownTurner1 am_model.am_L_DownTurner1
 #undef FattachRes
-#undef am2_R_turner1
-#define am2_R_turner1 am_model.am_R_turner1
 #undef am2_VI_NumberCycles
 #define am2_VI_NumberCycles am_model.am_VI_NumberCycles
 #undef AdjacentLocs
@@ -145,12 +147,16 @@
 #define am2_Q_Surface am_model.am_Q_Surface
 #undef am2_R_Surface
 #define am2_R_Surface am_model.am_R_Surface
+#undef am2_L_DownTimeMeasure
+#define am2_L_DownTimeMeasure am_model.am_L_DownTimeMeasure
 #undef ConnectSocketPort
 #undef OPCDisconnect
 #undef GetSocketNum
 #undef ConnectSocketService
 #undef am2_R_Turner2
 #define am2_R_Turner2 am_model.am_R_Turner2
+#undef am2_P_SurfaceInspection
+#define am2_P_SurfaceInspection am_model.am_P_SurfaceInspection
 #undef am2_Q_Turner2
 #define am2_Q_Turner2 am_model.am_Q_Turner2
 #undef FcolorElement
@@ -160,15 +166,23 @@
 #undef XLGetA1
 #undef am2_P_Turner2
 #define am2_P_Turner2 am_model.am_P_Turner2
+#undef am2_VI_PrevMeasure
+#define am2_VI_PrevMeasure am_model.am_VI_PrevMeasure
+#undef am2_Q_SurfaceInspection
+#define am2_Q_SurfaceInspection am_model.am_Q_SurfaceInspection
 #undef CurPath
 #undef am2_R_CutOperator
 #define am2_R_CutOperator am_model.am_R_CutOperator
+#undef am2_stream_R_Measure_1
+#define am2_stream_R_Measure_1 am_model.am_stream_R_Measure_1
 #undef MMSyncSendMessage
 #undef DBGetColumnName
 #undef am2_P_DownTimeTurner2
 #define am2_P_DownTimeTurner2 am_model.am_P_DownTimeTurner2
 #undef am2_Q_Unloading
 #define am2_Q_Unloading am_model.am_Q_Unloading
+#undef am2_P_DownTimeMeasure
+#define am2_P_DownTimeMeasure am_model.am_P_DownTimeMeasure
 #undef Fresvis
 #undef am2_P_DownTimeGrinder2
 #define am2_P_DownTimeGrinder2 am_model.am_P_DownTimeGrinder2
@@ -185,6 +199,8 @@
 #undef FattachRobot
 #undef am2_OL_ProductLoad
 #define am2_OL_ProductLoad am_model.am_OL_ProductLoad
+#undef am2_Q_Cooling
+#define am2_Q_Cooling am_model.am_Q_Cooling
 #undef am2_L_Product46
 #define am2_L_Product46 am_model.am_L_Product46
 #undef MMSyncReadMessageStringLength
@@ -203,16 +219,14 @@
 #undef FcopyQueuePict
 #undef FgetStartDate
 #undef XLSetAreaR1C1
-#undef am2_stream_R_MaintenanceGuy_1
-#define am2_stream_R_MaintenanceGuy_1 am_model.am_stream_R_MaintenanceGuy_1
+#undef am2_C_Product46
+#define am2_C_Product46 am_model.am_C_Product46
 #undef am2_stream_R_Grinder2_1
 #define am2_stream_R_Grinder2_1 am_model.am_stream_R_Grinder2_1
 #undef ReadSocketString
 #undef FrotQueue
 #undef LocPath
 #undef OPCReadReal
-#undef am2_stream_R_turner1_1
-#define am2_stream_R_turner1_1 am_model.am_stream_R_turner1_1
 #undef am2_modelsys
 #define am2_modelsys am_model.am_modelsys
 #undef am2_VI_PipeLength
@@ -239,6 +253,8 @@
 #undef am2_L_DownCutters
 #define am2_L_DownCutters am_model.am_L_DownCutters
 #undef MMSyncReadMessageReal
+#undef am2_P_Measure
+#define am2_P_Measure am_model.am_P_Measure
 #undef FattachLabel
 #undef am2_OL_WaitBatchUnloading
 #define am2_OL_WaitBatchUnloading am_model.am_OL_WaitBatchUnloading
@@ -254,10 +270,14 @@
 #define am2_Q_FixtureInPolisher am_model.am_Q_FixtureInPolisher
 #undef OPCListItems
 #undef DBGetColumnCount
+#undef am2_R_Measure
+#define am2_R_Measure am_model.am_R_Measure
 #undef am2_Q_Polisher
 #define am2_Q_Polisher am_model.am_Q_Polisher
 #undef am2_R_Polisher
 #define am2_R_Polisher am_model.am_R_Polisher
+#undef am2_Q_Measure
+#define am2_Q_Measure am_model.am_Q_Measure
 #undef am2_stream_R_Cutter_1
 #define am2_stream_R_Cutter_1 am_model.am_stream_R_Cutter_1
 #undef am2_AI_index
@@ -308,8 +328,14 @@
 #define am2_Q_Conveyor am_model.am_Q_Conveyor
 #undef FcopyLoadTypePict
 #undef MMSyncSendMessageType
+#undef am2_R_Inspector
+#define am2_R_Inspector am_model.am_R_Inspector
+#undef am2_C_Product49
+#define am2_C_Product49 am_model.am_C_Product49
 #undef SetSyncRate
 #undef OPCAddItem
+#undef am2_stream_R_Inspector_1
+#define am2_stream_R_Inspector_1 am_model.am_stream_R_Inspector_1
 #undef XLClearSheet
 #undef am2_Q_UnloadingArea
 #define am2_Q_UnloadingArea am_model.am_Q_UnloadingArea
@@ -334,6 +360,8 @@
 #undef OPCRefreshSubscription
 #undef OPCWriteReal
 #undef MMSyncSendMessageModel
+#undef am2_C_Product40
+#define am2_C_Product40 am_model.am_C_Product40
 #undef SetConnectBlocking
 #undef DBMoveNext
 #undef GetActiveXRunning
@@ -356,8 +384,6 @@
 #undef Fsaa_on
 #undef am2_P_WareHouse
 #define am2_P_WareHouse am_model.am_P_WareHouse
-#undef am2_Q_final
-#define am2_Q_final am_model.am_Q_final
 #undef MMSyncSendMessageNumStrings
 #undef am2_VI_LoadingTime
 #define am2_VI_LoadingTime am_model.am_VI_LoadingTime
@@ -388,6 +414,8 @@
 #define am2_VI_NumberofTurns2 am_model.am_VI_NumberofTurns2
 #undef am2_stream_R_Maintenance_1
 #define am2_stream_R_Maintenance_1 am_model.am_stream_R_Maintenance_1
+#undef am2_OL_WaitUnloadingArea
+#define am2_OL_WaitUnloadingArea am_model.am_OL_WaitUnloadingArea
 #undef am2_R_Grinder1
 #define am2_R_Grinder1 am_model.am_R_Grinder1
 #undef Fmodnavi

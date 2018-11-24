@@ -35,6 +35,10 @@ PROC name P_Final 0 traf Infinite
 PROC name P_Polisher 0 traf Infinite
 PROC name P_SurfaceTreatment 0 traf Infinite
 PROC name P_Cooling 0 traf Infinite
+PROC name P_DownTimeMeasure 0 traf Infinite
+PROC name P_Measure 0 traf Infinite
+PROC name P_SurfaceInspection 0 traf Infinite
+PROC name P_Packaging 0 traf Infinite
 LDTYPE name L_Init 0
 picpos endx 1
  template Feet
@@ -152,6 +156,15 @@ picpos endx 1
 310 0
 1 1 1 1 1 0 0
 end
+LDTYPE name L_DownTimeMeasure 0
+picpos endx 1
+ template Feet
+700 17
+2 2 0 1 1 none
+1
+310 0
+1 1 1 1 1 0 0
+end
 RSRC name R_CutOperator 0 cap 1 prtime con 5 Seconds stream stream_R_CutOperator_1
  dis 0 picpos begx -93 begy 46 endx -92 endy 46
 
@@ -176,8 +189,15 @@ RSRC name R_Cutter 2 cap 1 prtime con 5 Seconds stream stream_R_Cutter_1
 end
 		
 RSRC name R_TnSoperator 0 cap 1 prtime con 5 Seconds stream stream_R_TnSoperator_1
+ dis 0 picpos begx 46 begy -5 endx 47 endy -5
 
-	UserDef
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 0
+4 4 4 4 4 0 0
+end
 		
 RSRC name R_Turner1 0 cap 1 prtime con 5 Seconds stream stream_R_Turner1_1
  dis 0 picpos begx -53 begy 53 endx -52 endy 53
@@ -189,10 +209,6 @@ RSRC name R_Turner1 0 cap 1 prtime con 5 Seconds stream stream_R_Turner1_1
 310 0
 4 4 4 4 4 0 0
 end
-		
-RSRC name R_turner1 0 cap 1 prtime con 5 Seconds stream stream_R_turner1_1
-
-	UserDef
 		
 RSRC name R_Turner2 0 cap 1 prtime con 5 Seconds stream stream_R_Turner2_1
  dis 0 picpos begx -28 begy 53 endx -27 endy 53
@@ -217,8 +233,15 @@ RSRC name R_Grinder1 0 cap 1 prtime con 5 Seconds stream stream_R_Grinder1_1
 end
 		
 RSRC name R_Maintenance 0 cap 1 prtime con 5 Seconds stream stream_R_Maintenance_1
+ dis 0 picpos begx 46 begy -13 endx 47 endy -13
 
-	UserDef
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 0
+4 4 4 4 4 0 0
+end
 		
 RSRC name R_Grinder2 0 cap 1 prtime con 5 Seconds stream stream_R_Grinder2_1
  dis 0 picpos begx 32 begy 53 endx 33 endy 53
@@ -255,13 +278,31 @@ RSRC name R_Surface 0 cap 1 prtime con 5 Seconds stream stream_R_Surface_1
 4 4 4 4 4 0 0
 end
 		
-RSRC name R_MaintenanceGuy 0 cap 1 prtime con 5 Seconds stream stream_R_MaintenanceGuy_1
+RSRC name R_Measure 0 cap 1 prtime con 5 Seconds stream stream_R_Measure_1
+ dis 0 picpos begx 2 begy -31 endx 3 endy -31
 
-	UserDef
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 0
+4 4 4 4 4 0 0
+end
+		
+RSRC name R_Inspector 0 cap 1 prtime con 5 Seconds stream stream_R_Inspector_1
+ dis 0 picpos begx 18 begy -31 endx 19 endy -31
+
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 0
+4 4 4 4 4 0 0
+end
 		
 QUEUE name Q_WareHouse 0 cap 50
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -118 begy 48 endx -117 endy 48
 
 	UserDef	template Feet
@@ -273,16 +314,12 @@ QUEUE name Q_WareHouse 0 cap 50
 4 4 4 4 4 0 0
 end
 
-QUEUE name Q_cutter 0 cap 1
-
-	UserDef
-
 QUEUE name Q_Cutter 2 cap 1
 
-	dis 1 Stacking NOPLUSZ
+	dis 1 Stacking PLUSZ
 		picpos begx -93 begy 53 endx -92 endy 53
 
-	dis 2 Stacking NOPLUSZ
+	dis 2 Stacking PLUSZ
 		picpos begx -93 begy 33 endx -92 endy 33
 
 	UserDef	template Feet
@@ -294,13 +331,9 @@ QUEUE name Q_Cutter 2 cap 1
 4 4 4 4 4 0 0
 end
 
-QUEUE name Q_buffer1 0 cap 4
-
-	UserDef
-
 QUEUE name Q_Buffer1 0 cap 4
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -73 begy 52 endx -72 endy 52
 
 	UserDef	template Feet
@@ -314,7 +347,7 @@ end
 
 QUEUE name Q_Turner1 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -53 begy 48 endx -52 endy 48
 
 	UserDef	template Feet
@@ -326,13 +359,9 @@ QUEUE name Q_Turner1 0 cap 1
 4 4 4 4 4 0 0
 end
 
-QUEUE name Q_turner2 0 cap 1
-
-	UserDef
-
 QUEUE name Q_Turner2 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -28 begy 48 endx -27 endy 48
 
 	UserDef	template Feet
@@ -346,7 +375,7 @@ end
 
 QUEUE name Q_Buffer2 0 cap 2
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -8 begy 52 endx -7 endy 52
 
 	UserDef	template Feet
@@ -360,7 +389,7 @@ end
 
 QUEUE name Q_Grinder1 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx 12 begy 48 endx 13 endy 48
 
 	UserDef	template Feet
@@ -374,22 +403,8 @@ end
 
 QUEUE name Q_Grinder2 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx 32 begy 48 endx 33 endy 48
-
-	UserDef	template Feet
-700 17
-2 2 0 1 1 none
-1
-310 17
-2 2 0 1 0 none
-4 4 4 4 4 0 0
-end
-
-QUEUE name Q_Final 0 cap 2147483647
-
-	dis 0 Stacking OTT_LDDISP
-		picpos begx 49 begy -17 endx 50 endy -17
 
 	UserDef	template Feet
 700 17
@@ -402,7 +417,7 @@ end
 
 QUEUE name Q_Fixture 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -2 begy 25 endx -1 endy 25
 
 	UserDef	template Feet
@@ -416,7 +431,7 @@ end
 
 QUEUE name Q_LoadingProduct 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx 4 begy 9 endx 5 endy 9
 
 	UserDef	template Feet
@@ -430,7 +445,7 @@ end
 
 QUEUE name Q_LoadingFixture 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -8 begy 9 endx -7 endy 9
 
 	UserDef	template Feet
@@ -448,7 +463,7 @@ QUEUE name Q_FixtureInPolisher 0 cap 1
 
 QUEUE name Q_FixtureUnloading 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -93 begy 15 endx -92 endy 15
 
 	UserDef	template Feet
@@ -462,7 +477,7 @@ end
 
 QUEUE name Q_Conveyor 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -22 begy 25 endx -21 endy 25
 
 	UserDef	template Feet
@@ -476,11 +491,21 @@ end
 
 QUEUE name Q_Buffer40 0 cap 1
 
-	UserDef
+	dis 0 Stacking PLUSZ
+		picpos begx 18 begy 25 endx 19 endy 25
+
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 17
+2 2 0 1 0 none
+4 4 4 4 4 0 0
+end
 
 QUEUE name Q_Buffer46 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx 18 begy 15 endx 19 endy 15
 
 	UserDef	template Feet
@@ -494,13 +519,13 @@ end
 
 QUEUE name Q_Polisher 3 cap 1
 
-	dis 1 Stacking NOPLUSZ
+	dis 1 Stacking PLUSZ
 		picpos begx -50 begy 18 endx -49 endy 18
 
-	dis 2 Stacking NOPLUSZ
+	dis 2 Stacking PLUSZ
 		picpos begx -49 begy 4 endx -48 endy 4
 
-	dis 3 Stacking NOPLUSZ
+	dis 3 Stacking PLUSZ
 		picpos begx -49 begy -9 endx -48 endy -9
 
 	UserDef	template Feet
@@ -514,7 +539,7 @@ end
 
 QUEUE name Q_Buffer49 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx 18 begy 3 endx 19 endy 3
 
 	UserDef	template Feet
@@ -528,7 +553,7 @@ end
 
 QUEUE name Q_Unloading 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -78 begy 15 endx -77 endy 15
 
 	UserDef	template Feet
@@ -542,7 +567,7 @@ end
 
 QUEUE name Q_Buffer3 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -93 begy -36 endx -92 endy -36
 
 	UserDef	template Feet
@@ -556,7 +581,7 @@ end
 
 QUEUE name Q_UnloadingArea 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -40 begy -36 endx -39 endy -36
 
 	UserDef	template Feet
@@ -570,7 +595,7 @@ end
 
 QUEUE name Q_DummyUnloadingArea 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -40 begy -45 endx -39 endy -45
 
 	UserDef	template Feet
@@ -584,7 +609,7 @@ end
 
 QUEUE name Q_DummySurface 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -66 begy -45 endx -65 endy -45
 
 	UserDef	template Feet
@@ -598,7 +623,7 @@ end
 
 QUEUE name Q_Surface 0 cap 1
 
-	dis 0 Stacking OTT_LDDISP
+	dis 0 Stacking PLUSZ
 		picpos begx -66 begy -36 endx -65 endy -36
 
 	UserDef	template Feet
@@ -610,14 +635,52 @@ QUEUE name Q_Surface 0 cap 1
 4 4 4 4 4 0 0
 end
 
-QUEUE name Q_final 0 cap 2147483647
+QUEUE name Q_Cooling 0 cap 1
 
-	UserDef
+	dis 0 Stacking PLUSZ
+		picpos begx -15 begy -39 endx -14 endy -39
 
-QUEUE name Queue1 0 cap 1
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 17
+2 2 0 1 0 none
+4 4 4 4 4 0 0
+end
 
-	dis 0 Stacking OTT_LDDISP
-		picpos begx 18 begy 26 endx 19 endy 26
+QUEUE name Q_Measure 0 cap 1
+
+	dis 0 Stacking PLUSZ
+		picpos begx 2 begy -39 endx 3 endy -39
+
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 17
+2 2 0 1 0 none
+4 4 4 4 4 0 0
+end
+
+QUEUE name Q_SurfaceInspection 0 cap 1
+
+	dis 0 Stacking PLUSZ
+		picpos begx 18 begy -39 endx 19 endy -39
+
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 17
+2 2 0 1 0 none
+4 4 4 4 4 0 0
+end
+
+QUEUE name Q_Packaging 0 cap 2147483647
+
+	dis 0 Stacking PLUSZ
+		picpos begx 40 begy -38 endx 41 endy -38
 
 	UserDef	template Feet
 700 17
@@ -640,6 +703,10 @@ ORDER name OL_ProductLoad 0
 ORDER name OL_WaitForBatch 0
 ORDER name OL_WaitBatchSurface 0
 ORDER name OL_WaitBatchUnloading 0
+ORDER name OL_WaitUnloadingArea 0
+COUNT name C_Product40 0 cap Infinite
+COUNT name C_Product46 0 cap Infinite
+COUNT name C_Product49 0 cap Infinite
 ATT name AI_CutType 0 type Integer
 ATT name A_QPtr 0 type QueuePtr
 ATT name AI_Index 0 type Integer
@@ -648,6 +715,7 @@ ATT name AI_ProdType 0 type Integer
 ATT name AI_index 0 type Integer
 ATT name AI_PolisherIndex 0 type Integer
 ATT name A_QptrPolisher 0 type QueuePtr
+ATT name AI_InspectionResult 0 type Integer
 VAR name VI_CycleTimePolisher 1 3 type Integer
 VAR name VI_ArrivingTime 0 type Integer
 VAR name VI_PipeLength 0 type Integer
@@ -660,6 +728,7 @@ VAR name VI_NumberofTurns1 0 type Integer
 VAR name VI_NumberofTurns2 0 type Integer
 VAR name VI_BatchSize 0 type Integer
 VAR name VI_NumberCycles 0 type Integer
+VAR name VI_PrevMeasure 0 type Integer
 RNSTREAM stream0 0 type CMRG flags 1
 	cmrgseed 1 12345 12345 12345 12345 12345 12345
 RNSTREAM stream_R_CutOperator_1 0 type CMRG flags 1
@@ -675,9 +744,6 @@ RNSTREAM stream_R_TnSoperator_1 0 type CMRG flags 1
 RNSTREAM stream_R_Turner1_1 0 type CMRG flags 1
 	title "Generated automatically for R_Turner1"
 	cmrgseed 1 97147054 3131372450 829345164 3691032523 3006063034 4259826321
-RNSTREAM stream_R_turner1_1 0 type CMRG flags 1
-	title "Generated automatically for R_turner1"
-	cmrgseed 1 796079799 2105258207 955365076 2923159030 4116632677 3067683584
 RNSTREAM stream_R_Turner2_1 0 type CMRG flags 1
 	title "Generated automatically for R_Turner2"
 	cmrgseed 1 3281794178 2616230133 1457051261 2762791137 2480527362 2282316169
@@ -698,10 +764,13 @@ RNSTREAM stream_R_Polisher_1 3 type CMRG flags 1
 RNSTREAM stream_R_Surface_1 0 type CMRG flags 1
 	title "Generated automatically for R_Surface"
 	cmrgseed 1 596094074 2279636413 3050913596 1739649456 2368706608 3058697049
-RNSTREAM stream_R_MaintenanceGuy_1 0 type CMRG flags 1
-	title "Generated automatically for R_MaintenanceGuy"
-	cmrgseed 1 1437096527 2547142266 2541498983 2640839690 2160978219 2618657830
-RNSTATE 3224044943 1227141655 2220611050 1504589054 2829780440 108189859
+RNSTREAM stream_R_Measure_1 0 type CMRG flags 1
+	title "Generated automatically for R_Measure"
+	cmrgseed 1 3224044943 1227141655 2220611050 1504589054 2829780440 108189859
+RNSTREAM stream_R_Inspector_1 0 type CMRG flags 1
+	title "Generated automatically for R_Inspector"
+	cmrgseed 1 927434978 1593504038 2143021818 1749489845 1330187821 2371554242
+RNSTATE 3446225690 835741554 2195834023 1297741021 3357053382 383824268
 SFileBegin	name upperlanelogic.m
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -782,9 +851,9 @@ begin P_Turner1 arriving procedure
 		set VI_NumberofTurns1 = 0
 	end
 	
-	use R_turner1 for uniform 290,0 sec
+	use R_Turner1 for uniform 290,0 sec
 	inc VI_NumberofTurns1 by 1 
-	//if Q_turner2 remaining space = 0 then 
+	//if Q_Turner2 remaining space = 0 then 
 	//	wait to be ordered on OL_Turner1Wait
 	
 	send to P_Turner2
@@ -815,7 +884,7 @@ begin P_Turner2 arriving procedure
 		set VI_NumberofTurns2 = 0
 	end
 	
-	use R_turner1 for uniform 290,0 sec
+	use R_Turner1 for uniform 290,0 sec
 	inc VI_NumberofTurns2 by 1 
 	//if Q_Buffer2 remaining space = 0 then 
 	//	wait to be ordered on OL_Turner2Wait
@@ -964,6 +1033,7 @@ begin model initialization function
 	create 1 loads of load type L_DownTurner2 to P_DownTimeTurner2
 	create 1 loads of load type L_DownGrinder1 to P_DownTimeGrinder1
 	create 1 loads of load type L_DownGrinder2 to P_DownTimeGrinder2
+	create 1 load of type L_DownTimeMeasure to P_DownTimeMeasure
     return 0
 end
 
@@ -992,6 +1062,7 @@ begin P_Init arriving procedure
     set Q_UnloadingArea capacity = 7
     set Q_DummyUnloadingArea capacity = VI_BatchSize-1
     set Q_DummySurface capacity = VI_BatchSize-1
+    set Q_Cooling capacity = 9
 
 
    
@@ -1043,7 +1114,7 @@ begin P_DownTimePolishers arriving procedure
     while 1=1 do begin
         wait for exponential 90 min /* MTTF */
         take down R_Polisher(AI_index)
-        use R_MaintenanceGuy for gamma 12, 2 min /* MTTR */ 
+        use R_Maintenance for gamma 12, 2 min /* MTTR */ 
         bring up R_Polisher(AI_index)
     end
 end
@@ -1098,38 +1169,97 @@ begin P_DownTimeGrinder2 arriving procedure
 	end
 end
 
+begin P_DownTimeMeasure arriving procedure
+    while 1=1 do begin
+        wait for exponential 20 min /* MTTF */
+        take down R_Measure
+        use R_Inspector for 1 sec /* MTTR */ 
+        wait for 2.5 min
+        bring up R_Measure
+    end
+end 
+
 #@!
-SFileBegin	name surfacetreatment.m
+SFileBegin	name lowerlane.m
 begin P_SurfaceTreatment arriving procedure
     if OL_WaitForBatch current < VI_BatchSize-1 then 
-    	begin
-	        wait to be ordered on OL_WaitForBatch
-	        move into Q_DummySurface
-	        wait to be ordered on OL_WaitBatchSurface
-	        move into Q_DummyUnloadingArea
-	        wait to be ordered on OL_WaitBatchUnloading
-	        send to P_Cooling
+        begin
+            wait to be ordered on OL_WaitForBatch
+            move into Q_DummySurface
+            wait to be ordered on OL_WaitBatchSurface
+            move into Q_DummyUnloadingArea
+            wait to be ordered on OL_WaitBatchUnloading
+            send to P_Cooling
         end
 
     order VI_BatchSize-1 from OL_WaitForBatch to continue
     move into Q_Surface
 
     if VI_NumberCycles = 4 then
-    	begin
-	        wait for uniform 545, 95 sec //Refill liquid
-	        set VI_NumberCycles = 0
+        begin
+            wait for uniform 545, 95 sec //Refill liquid
+            set VI_NumberCycles = 0
         end
 
     use R_Surface for 700 sec
+
+    if Q_UnloadingArea current > 0 then
+        wait to be ordered on OL_WaitUnloadingArea
+
     order VI_BatchSize - 1 loads from OL_WaitBatchSurface to continue
     move into Q_UnloadingArea
+
     use R_TnSoperator for 5 sec
     order VI_BatchSize - 1 loads from OL_WaitBatchUnloading to continue
     send to P_Cooling
 end
 
 begin P_Cooling arriving procedure
-    move into Q_final
+    move into Q_Cooling
+    if Q_UnloadingArea current = 0 and Q_DummyUnloadingArea current = 0 then
+        order 1 load from OL_WaitUnloadingArea to continue
+
+    wait for uniform 10, 1 min
+    send to P_Measure
+end
+
+begin P_Measure arriving procedure
+    move into Q_Measure
+    wait for 80 sec //Loading time
+    if this load type = L_Product40 then    
+        set AI_ProdType = 1 
+    if this load type = L_Product46 then    
+        set AI_ProdType = 2
+    if this load type = L_Product49 then    
+        set AI_ProdType = 3
+
+    if AI_ProdType != VI_PrevMeasure then
+        wait for uniform 72.5, 12.5 sec //Set up time between different product types
+
+    set VI_PrevMeasure = AI_ProdType
+
+    wait for 295 sec //Measuring time
+
+    send to P_SurfaceInspection
+end
+
+begin P_SurfaceInspection arriving procedure
+    move into Q_SurfaceInspection
+    use R_Inspector for uniform 4.25, 0.75 min
+    set AI_InspectionResult = oneof(5:0,95:1)
+    if AI_InspectionResult = 0
+        send to die
+    send to P_Packaging
+end
+
+begin P_Packaging arriving procedure
+    move into Q_Packaging //TODO: Check in the Queue pallet that initial capacity = infinity
+    if this load type = L_Product40 then    
+        inc C_Product40 by 1  
+    if this load type = L_Product46 then    
+        inc C_Product46 by 1 
+    if this load type = L_Product49 then    
+        inc C_Product49 by 1 
     send to die
 end
 

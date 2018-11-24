@@ -9,6 +9,7 @@ begin model initialization function
 	create 1 loads of load type L_DownTurner2 to P_DownTimeTurner2
 	create 1 loads of load type L_DownGrinder1 to P_DownTimeGrinder1
 	create 1 loads of load type L_DownGrinder2 to P_DownTimeGrinder2
+	create 1 load of type L_DownTimeMeasure to P_DownTimeMeasure
     return 0
 end
 
@@ -37,6 +38,7 @@ begin P_Init arriving procedure
     set Q_UnloadingArea capacity = 7
     set Q_DummyUnloadingArea capacity = VI_BatchSize-1
     set Q_DummySurface capacity = VI_BatchSize-1
+    set Q_Cooling capacity = 9
 
 
    

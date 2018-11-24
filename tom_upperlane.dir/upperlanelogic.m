@@ -77,9 +77,9 @@ begin P_Turner1 arriving procedure
 		set VI_NumberofTurns1 = 0
 	end
 	
-	use R_turner1 for uniform 290,0 sec
+	use R_Turner1 for uniform 290,0 sec
 	inc VI_NumberofTurns1 by 1 
-	//if Q_turner2 remaining space = 0 then 
+	//if Q_Turner2 remaining space = 0 then 
 	//	wait to be ordered on OL_Turner1Wait
 	
 	send to P_Turner2
@@ -110,7 +110,7 @@ begin P_Turner2 arriving procedure
 		set VI_NumberofTurns2 = 0
 	end
 	
-	use R_turner1 for uniform 290,0 sec
+	use R_Turner1 for uniform 290,0 sec
 	inc VI_NumberofTurns2 by 1 
 	//if Q_Buffer2 remaining space = 0 then 
 	//	wait to be ordered on OL_Turner2Wait

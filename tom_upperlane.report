@@ -1,7 +1,7 @@
 *** AutoMod 12.6 ***
 Model tom_upperlane
 Statistics at Absolute Clock = 66:16:00:00.00, Relative Clock = 66:16:00:00.00
-CPU time: Absolute: 7.79 sec, Relative: 7.79 sec
+CPU time: Absolute: 156.813 sec, Relative: 156.813 sec
 
 Statistics for Process System "tom_upperlane"
 
@@ -18,17 +18,21 @@ P_DownTimeGrinder1         1     1     1.00       --     1     0     -- 5760000.
 P_DownTimeGrinder2         1     1     1.00       --     1     0     -- 5760000.00 
 P_RawMaterialArrival       1     1     1.00       --     1     0     -- 5760000.00 
 P_Loading                  3     3     3.00       --     3     0     -- 5760000.00 
-P_WareHouse             2010  1153   577.82       --  1153     0     -- 1655829.97 
-P_Cutter                 857     2     2.00       --     2     0     --   13442.24 
-P_Turner1               5879     5     4.74       --     5     0     --    4643.24 
-P_Turner2               5874     0     0.79       --     2     0     --     775.17 
-P_Grinder1              5874     1     1.32       --     4     0     --    1293.22 
-P_Grinder2              5873     0     0.65       --     2     0     --     640.90 
+P_WareHouse             2010  1655   828.29       --  1655     0     -- 2373613.65 
+P_Cutter                 355     2     2.00       --     2     0     --   32450.70 
+P_Turner1               2448     4     4.52       --     5     0     --   10627.08 
+P_Turner2               2444     2     1.04       --     2     0     --    2443.21 
+P_Grinder1              2442     1     1.42       --     4     0     --    3344.87 
+P_Grinder2              2441     1     0.60       --     2     0     --    1427.23 
 P_final                    0     0     0.00       --     0     0     --       0.00 
 P_Final                    0     0     0.00       --     0     0     --       0.00 
-P_Polisher              5873     4     2.56       --    16     0     --    2511.17 
-P_SurfaceTreatment      5869     3     4.21       --    17     0     --    4127.14 
-P_Cooling               5866     0     0.00       --     1     0     --       0.00 
+P_Polisher              2440     2     2.07       --    21     0     --    4896.69 
+P_SurfaceTreatment      2438     9     3.89       --    15     0     --    9182.92 
+P_Cooling               2429     0     0.26       --    14     0     --     607.83 
+P_DownTimeMeasure          1     1     1.00       --     1     0     -- 5760000.00 
+P_Measure               2429     0     0.68       --     9     0     --    1610.10 
+P_SurfaceInspection     2429     0     0.11       --     1     0     --     255.11 
+P_Packaging             2323     0     0.00       --     1     0     --       0.00 
 
 Process Traffic Limit Statistics
 Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait
@@ -43,70 +47,81 @@ P_DownTimeGrinder1         1     1     1.00 Infinite     1     0     -- 5760000.
 P_DownTimeGrinder2         1     1     1.00 Infinite     1     0     -- 5760000.00 
 P_RawMaterialArrival       1     1     1.00 Infinite     1     0     -- 5760000.00 
 P_Loading                  3     3     3.00 Infinite     3     0     -- 5760000.00 
-P_WareHouse             2010  1153   577.82 Infinite  1153     0     -- 1655829.97 
-P_Cutter                 857     2     2.00 Infinite     2     0     --   13442.24 
-P_Turner1               5879     5     4.74 Infinite     5     0     --    4643.24 
-P_Turner2               5874     0     0.79 Infinite     2     0     --     775.17 
-P_Grinder1              5874     1     1.32 Infinite     4     0     --    1293.22 
-P_Grinder2              5873     0     0.65 Infinite     2     0     --     640.90 
+P_WareHouse             2010  1655   828.29 Infinite  1655     0     -- 2373613.65 
+P_Cutter                 355     2     2.00 Infinite     2     0     --   32450.70 
+P_Turner1               2448     4     4.52 Infinite     5     0     --   10627.08 
+P_Turner2               2444     2     1.04 Infinite     2     0     --    2443.21 
+P_Grinder1              2442     1     1.42 Infinite     4     0     --    3344.87 
+P_Grinder2              2441     1     0.60 Infinite     2     0     --    1427.23 
 P_final                    0     0     0.00 Infinite     0     0     --       0.00 
 P_Final                    0     0     0.00 Infinite     0     0     --       0.00 
-P_Polisher              5873     4     2.56 Infinite    16     0     --    2511.17 
-P_SurfaceTreatment      5869     3     4.21 Infinite    17     0     --    4127.14 
-P_Cooling               5866     0     0.00 Infinite     1     0     --       0.00 
+P_Polisher              2440     2     2.07 Infinite    21     0     --    4896.69 
+P_SurfaceTreatment      2438     9     3.89 Infinite    15     0     --    9182.92 
+P_Cooling               2429     0     0.26 Infinite    14     0     --     607.83 
+P_DownTimeMeasure          1     1     1.00 Infinite     1     0     -- 5760000.00 
+P_Measure               2429     0     0.68 Infinite     9     0     --    1610.10 
+P_SurfaceInspection     2429     0     0.11 Infinite     1     0     --     255.11 
+P_Packaging             2323     0     0.00 Infinite     1     0     --       0.00 
 
 Queue Statistics
 Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait
 ========================================================================================
-Space                   7904  1113   538.78 Infinite  1113     0     --  392636.20 
-Q_WareHouse              907    50    49.03       50    50     0  0.981  311380.01 1515321.67
-Q_cutter                   0     0     0.00        1     0     0  0.000       0.00       0.00
-Q_Cutter(1)              426     1     1.00        1     1     0  1.000   13521.13       0.00
-Q_Cutter(2)              431     1     1.00        1     1     0  1.000   13364.27       0.00
-Q_buffer1                  0     0     0.00        4     0     0  0.000       0.00       0.00
-Q_Buffer1               5879     4     3.98        4     4     0  0.995    3900.63       0.00
-Q_Turner1               5875     1     1.00        1     1     0  1.000     980.31    3900.63
-Q_turner2                  0     0     0.00        1     0     0  0.000       0.00       0.00
-Q_Turner2               5874     0     0.68        1     1     0  0.679     666.25     237.23
-Q_Buffer2               5874     0     0.67        2     2     0  0.335     656.06     128.31
-Q_Grinder1              5874     1     0.68        1     1     0  0.683     669.29     656.06
-Q_Grinder2              5873     0     0.49        1     1     0  0.494     484.50     160.48
-Q_Final                    0     0     0.00 Infinite     0     0     --       0.00 
-Q_Fixture               5871     0     1.26        3     3     0  0.422    1240.86       0.00
-Q_LoadingProduct        5871     1     0.49        1     1     0  0.485     476.20       0.00
-Q_LoadingFixture        5871     1     0.16        1     1     0  0.163     160.00       0.00
-Q_FixtureInPolisher     5870     1     1.10        3     3     0  0.368    1082.78       0.00
-Q_FixtureUnloading      5869     0     0.16        1     1     0  0.163     160.00       3.77
-Q_Conveyor              5869     1     0.31        3     2     0  0.102     299.98       0.00
-Q_Buffer40              1396     2     0.20        8     8     0  0.025     817.57       1.00
-Q_Buffer46              2758     0     0.51        8     8     0  0.064    1068.34       7.29
-Q_Polisher(1)           2053     1     0.28        1     1     0  0.280     785.11     191.12
-Q_Polisher(2)           1561     0     0.26        1     1     0  0.256     944.16     148.23
-Q_Polisher(3)           2256     0     0.35        1     1     0  0.354     903.05     270.05
-Q_Buffer49              1719     0     0.31        8     8     0  0.039    1034.66       1.42
-Q_Unloading             5869     0     0.16        1     1     0  0.163     160.00       3.77
-Q_Buffer3               5869     3     3.01        7     7     0  0.430    2951.86       0.00
-Q_UnloadingArea          838     0     0.07        7     2     0  0.010     475.89       0.00
-Q_DummyUnloadingArea    5028     0     0.41        6     6     0  0.068     466.60       9.29
-Q_DummySurface          5028     0     0.62        6     6     0  0.103     709.29       0.00
-Q_Surface                838     0     0.10        1     1     0  0.102     700.00       0.00
-Q_final                 5866     0     0.00 Infinite     1     0     --       0.00 
+Space                   4474  1616   790.00 Infinite  1616     0     -- 1017080.73 
+Q_WareHouse              405    50    49.29       50    50     0  0.986  700998.13 2232367.76
+Q_Cutter(1)              172     1     1.00        1     1     0  1.000   33488.37       0.00
+Q_Cutter(2)              183     1     1.00        1     1     0  1.000   31475.41       0.00
+Q_Buffer1               2448     4     3.91        4     4     0  0.979    9210.12       0.00
+Q_Turner1               2444     1     1.00        1     1     0  0.997    2350.72    9210.12
+Q_Turner2               2443     1     0.85        1     1     0  0.847    1996.59     931.45
+Q_Buffer2               2442     0     0.79        2     2     0  0.397    1871.36     484.41
+Q_Grinder1              2442     1     0.63        1     1     0  0.631    1488.68    1871.36
+Q_Grinder2              2441     1     0.40        1     1     0  0.398     940.04     499.78
+Q_Fixture               2441     1     1.69        3     3     0  0.562    3976.76       0.00
+Q_LoadingProduct        2440     1     0.38        1     1     0  0.379     894.41       0.00
+Q_LoadingFixture        2440     1     0.07        1     1     0  0.068     159.98       0.00
+Q_FixtureInPolisher     2439     1     1.05        3     3     0  0.351    2485.00       0.00
+Q_FixtureUnloading      2438     0     0.07        1     1     0  0.068     160.00       2.37
+Q_Conveyor              2438     0     0.13        3     2     0  0.042     300.00       0.00
+Q_Buffer40               672     0     0.26        8     8     0  0.032    2215.56       5.71
+Q_Buffer46              1066     0     0.32        8     8     0  0.039    1702.16      12.13
+Q_Polisher(1)            910     0     0.28        1     1     0  0.280    1773.05     630.49
+Q_Polisher(2)            620     0     0.23        1     1     0  0.232    2155.43     520.42
+Q_Polisher(3)            909     1     0.28        1     1     0  0.278    1759.92     676.45
+Q_Buffer49               702     0     0.26        8     8     0  0.032    2125.01      19.92
+Q_Unloading             2438     0     0.07        1     1     0  0.068     160.00       2.37
+Q_Buffer3               2438     2     3.07        7     7     0  0.439    7261.28       0.00
+Q_UnloadingArea          348     1     0.07        7     1     0  0.010    1216.54       0.00
+Q_DummyUnloadingArea    2088     6     0.44        6     6     0  0.074    1226.38       0.00
+Q_DummySurface          2088     0     0.26        6     6     0  0.043     706.68       0.00
+Q_Surface                348     0     0.04        1     1     0  0.043     706.68       0.00
+Q_Cooling               2429     0     0.76        9     9     0  0.084    1802.89       8.46
+Q_Measure               2429     0     0.17        1     1     0  0.171     406.59    1203.51
+Q_SurfaceInspection     2429     0     0.11        1     1     0  0.108     255.11       0.00
+Q_Packaging             2323     0     0.00 Infinite     1     0     --       0.00 
+
+Counter Statistics
+Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait
+========================================================================================
+C_Product40              637   637   332.56 Infinite   637     0     -- 3007141.51 
+C_Product46             1012  1012   475.35 Infinite  1012     0     -- 2705543.33 
+C_Product49              674   674   344.35 Infinite   674     0     -- 2942798.15 
 
 Order List Statistics
 Name              Total   Cur  Average   Max   Min    Av_Time
 =============================================================
-OL_WaitForCutter     905    50    49.03    50     0  312068.14
-OL_CutterWait      5710     2     1.52     2     0    1536.99
+OL_WaitForCutter     403    50    49.29    50     0  704477.03
+OL_CutterWait      2177     1     1.49     2     0    3940.49
 OL_Turner1Wait        0     0     0.00     0     0       0.00
 OL_Turner2Wait        0     0     0.00     0     0       0.00
 OL_Grinder1Wait       0     0     0.00     0     0       0.00
-OL_FixtureAvailable    2080     0     0.11     1     0     299.73
-OL_FixtureLoad     5871     0     1.26     3     0    1240.86
-OL_FixtureUnload    5870     1     1.10     3     0    1079.01
-OL_ProductLoad     2965     2     1.02    14     0    1978.55
-OL_WaitForBatch    5031     3     3.01     6     0    3443.54
-OL_WaitBatchSurface    5028     0     0.61     6     0     700.00
-OL_WaitBatchUnloading    5028     0     0.41     6     0     466.60
+OL_FixtureAvailable     639     0     0.05     1     0     439.31
+OL_FixtureLoad     2441     1     1.69     3     0    3976.76
+OL_FixtureUnload    2439     1     1.05     3     0    2482.63
+OL_ProductLoad     1068     0     0.83    18     0    4489.81
+OL_WaitForBatch    2090     2     3.07     6     0    8470.34
+OL_WaitBatchSurface    2088     0     0.26     6     0     706.68
+OL_WaitBatchUnloading    2088     6     0.44     6     0    1216.54
+OL_WaitUnloadingArea       2     0     0.00     1     0    1162.41
 
 Order List Backordered Statistics
 Name              Total   Cur  Average   Max   Min  Fulfilled
@@ -123,36 +138,36 @@ OL_ProductLoad        0     0     0.00     0     0          0
 OL_WaitForBatch       0     0     0.00     0     0          0
 OL_WaitBatchSurface       0     0     0.00     0     0          0
 OL_WaitBatchUnloading       0     0     0.00     0     0          0
+OL_WaitUnloadingArea       0     0     0.00     0     0          0
 
 Resource Statistics
 Name                   Total   Cur  Average Capacity   Max   Min   Util    Av_Time    Av_Wait     State     
 ====================================================================================================
-R_CutOperator            857     0     0.05        1     1     0  0.046     306.44      23.55     Up   ----      
-R_Cutter(1)             3353     0     0.09        1     1     0  0.085     146.66     210.37     Up   ----      
-R_Cutter(2)             3385     0     0.09        1     1     0  0.086     146.63     213.76     Up   ----      
-R_TnSoperator           9559     0     0.36        1     1     0  0.359     216.18     106.33     Up   ----      
-R_Turner1               4361     0     0.01        1     1     0  0.011      14.06     203.50   Down   ----      
-R_turner1              11749     1     0.59        1     1     0  0.592     289.99     122.09     Up   ----      
-R_Turner2               4360     0     0.01        1     1     0  0.011      14.03     232.98     Up   ----      
-R_Grinder1              5874     1     0.30        1     1     0  0.303     296.94     100.88     Up   ----      
-R_Maintenance           3303     1     0.80        1     1     0  0.798    1391.66    1338.10     Up   ----      
-R_Grinder2              5873     0     0.30        1     1     0  0.303     296.95      89.79     Up   ----      
-R_Polisher(1)           2053     1     0.17        1     1     0  0.175     489.93     124.29     Up   ----      
-R_Polisher(2)           1561     0     0.15        1     1     0  0.146     540.00     177.50     Up   ----      
-R_Polisher(3)           2256     0     0.22        1     1     0  0.223     570.00     127.35     Up   ----      
-R_Surface                838     0     0.10        1     1     0  0.102     700.00       0.00     Up   ----      
-R_MaintenanceGuy        2354     0     0.59        1     1     0  0.590    1444.38     463.86     Up   ----      
+R_CutOperator            355     0     0.07        1     1     0  0.073    1184.65     126.40     Up   ----      
+R_Cutter(1)             1360     0     0.03        1     1     0  0.035     146.72     834.34   Down   ----      
+R_Cutter(2)             1444     0     0.04        1     1     0  0.037     146.69     752.72     Up   ----      
+R_TnSoperator           3743     1     0.47        1     1     0  0.471     724.22     285.98     Up   ----      
+R_Turner1               6584     0     0.25        1     1     0  0.250     218.81     400.53   Down   ----      
+R_Turner2               1697     0     0.00        1     1     0  0.004      13.93     775.25   Down   ----      
+R_Grinder1              2442     1     0.13        1     1     0  0.125     295.92     456.09     Up   ----      
+R_Maintenance           4027     1     0.99        1     1     0  0.990    1415.79    4685.48     Up   ----      
+R_Grinder2              2441     1     0.13        1     1     0  0.125     295.93     400.91     Up   ----      
+R_Polisher(1)            910     0     0.08        1     1     0  0.077     490.00     735.49   Down   ----      
+R_Polisher(2)            620     0     0.06        1     1     0  0.058     540.00    1000.83     Up   ----      
+R_Polisher(3)            909     1     0.09        1     1     0  0.090     569.68     702.55     Up   ----      
+R_Surface                348     0     0.04        1     1     0  0.042     700.00       0.00     Up   ----      
+R_Measure                  0     0     0.00        1     0     0  0.000       0.00       0.00     Up   ----      
+R_Inspector             6766     0     0.11        1     1     0  0.108      92.22       9.31     Up   ----      
 
 Random Number Streams
 Name                 Total 
 ============================
-stream0              52004
+stream0              38605
 stream_R_CutOperator_1 0
 stream_R_Cutter_1(1) 0
 stream_R_Cutter_1(2) 0
 stream_R_TnSoperator_1 0
 stream_R_Turner1_1   0
-stream_R_turner1_1   0
 stream_R_Turner2_1   0
 stream_R_Grinder1_1  0
 stream_R_Maintenance_1 0
@@ -161,6 +176,7 @@ stream_R_Polisher_1(1) 0
 stream_R_Polisher_1(2) 0
 stream_R_Polisher_1(3) 0
 stream_R_Surface_1   0
-stream_R_MaintenanceGuy_1 0
+stream_R_Measure_1   0
+stream_R_Inspector_1 0
 
 

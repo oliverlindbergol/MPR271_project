@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Hopslagning1\tom_upperlane.dir\
-// Generated:	Thu Nov 22 15:26:02 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\tom_upperlane.dir\
+// Generated:	Sat Nov 24 12:20:16 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -30,14 +30,16 @@ initglobs0()
 {
 	am_model.$sys = model;
 	am_model.am_Q_DummyUnloadingArea = symGetSystemDataByName(am_model.$sys, "Q_DummyUnloadingArea");
+	am_model.am_Q_Packaging = symGetSystemDataByName(am_model.$sys, "Q_Packaging");
+	am_model.am_P_Packaging = symGetSystemDataByName(am_model.$sys, "P_Packaging");
 	am_model.am_stream_R_Grinder1_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Grinder1_1");
 	am_model.am_Q_Buffer2 = symGetSystemDataByName(am_model.$sys, "Q_Buffer2");
 	am_model.am_die = symGetSystemDataByName(am_model.$sys, "die");
 	am_model.am_L_DownTurner2 = symGetSystemDataByName(am_model.$sys, "L_DownTurner2");
+	am_model.am_AI_InspectionResult$att = symGetSystemDataByName(am_model.$sys, "AI_InspectionResult");
 	am_model.am_AI_CutType$att = symGetSystemDataByName(am_model.$sys, "AI_CutType");
 	am_model.am_Q_LoadingProduct = symGetSystemDataByName(am_model.$sys, "Q_LoadingProduct");
 	am_model.am_AI_ProdType$att = symGetSystemDataByName(am_model.$sys, "AI_ProdType");
-	am_model.am_R_MaintenanceGuy = symGetSystemDataByName(am_model.$sys, "R_MaintenanceGuy");
 	am_model.am_Q_LoadingFixture = symGetSystemDataByName(am_model.$sys, "Q_LoadingFixture");
 	am_model.am_VI_PrevTurner$var = symGetSystemDataByName(am_model.$sys, "VI_PrevTurner");
 	am_model.am_VI_PrevTurner$var->data = (void*)&am_model.am_VI_PrevTurner;
@@ -49,7 +51,6 @@ initglobs0()
 	am_model.am_L_Init = symGetSystemDataByName(am_model.$sys, "L_Init");
 	am_model.am_Q_Buffer46 = symGetSystemDataByName(am_model.$sys, "Q_Buffer46");
 	am_model.am_L_DownTurner1 = symGetSystemDataByName(am_model.$sys, "L_DownTurner1");
-	am_model.am_R_turner1 = symGetSystemDataByName(am_model.$sys, "R_turner1");
 	am_model.am_VI_NumberCycles$var = symGetSystemDataByName(am_model.$sys, "VI_NumberCycles");
 	am_model.am_VI_NumberCycles$var->data = (void*)&am_model.am_VI_NumberCycles;
 	am_model.am_L_DownGrinder2 = symGetSystemDataByName(am_model.$sys, "L_DownGrinder2");
@@ -67,19 +68,27 @@ initglobs0()
 	am_model.am_P_RawMaterialArrival = symGetSystemDataByName(am_model.$sys, "P_RawMaterialArrival");
 	am_model.am_Q_Surface = symGetSystemDataByName(am_model.$sys, "Q_Surface");
 	am_model.am_R_Surface = symGetSystemDataByName(am_model.$sys, "R_Surface");
+	am_model.am_L_DownTimeMeasure = symGetSystemDataByName(am_model.$sys, "L_DownTimeMeasure");
 	am_model.am_R_Turner2 = symGetSystemDataByName(am_model.$sys, "R_Turner2");
+	am_model.am_P_SurfaceInspection = symGetSystemDataByName(am_model.$sys, "P_SurfaceInspection");
 	am_model.am_Q_Turner2 = symGetSystemDataByName(am_model.$sys, "Q_Turner2");
 	am_model.am_A_QPtr$att = symGetSystemDataByName(am_model.$sys, "A_QPtr");
 	am_model.am_P_Turner2 = symGetSystemDataByName(am_model.$sys, "P_Turner2");
+	am_model.am_VI_PrevMeasure$var = symGetSystemDataByName(am_model.$sys, "VI_PrevMeasure");
+	am_model.am_VI_PrevMeasure$var->data = (void*)&am_model.am_VI_PrevMeasure;
+	am_model.am_Q_SurfaceInspection = symGetSystemDataByName(am_model.$sys, "Q_SurfaceInspection");
 	am_model.am_R_CutOperator = symGetSystemDataByName(am_model.$sys, "R_CutOperator");
+	am_model.am_stream_R_Measure_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Measure_1");
 	am_model.am_P_DownTimeTurner2 = symGetSystemDataByName(am_model.$sys, "P_DownTimeTurner2");
 	am_model.am_Q_Unloading = symGetSystemDataByName(am_model.$sys, "Q_Unloading");
+	am_model.am_P_DownTimeMeasure = symGetSystemDataByName(am_model.$sys, "P_DownTimeMeasure");
 	am_model.am_P_DownTimeGrinder2 = symGetSystemDataByName(am_model.$sys, "P_DownTimeGrinder2");
 	am_model.am_stream_R_Turner2_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Turner2_1");
 	am_model.am_P_Loading = symGetSystemDataByName(am_model.$sys, "P_Loading");
 	am_model.am_stream_R_Polisher_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Polisher_1");
 	am_model.am_OL_FixtureUnload = symGetSystemDataByName(am_model.$sys, "OL_FixtureUnload");
 	am_model.am_OL_ProductLoad = symGetSystemDataByName(am_model.$sys, "OL_ProductLoad");
+	am_model.am_Q_Cooling = symGetSystemDataByName(am_model.$sys, "Q_Cooling");
 	am_model.am_L_Product46 = symGetSystemDataByName(am_model.$sys, "L_Product46");
 	am_model.am_VI_Numberofcuts$var = symGetSystemDataByName(am_model.$sys, "VI_Numberofcuts");
 	am_model.am_VI_Numberofcuts = (int32*)xcalloc(4, sizeof(*am_model.am_VI_Numberofcuts));
@@ -88,9 +97,8 @@ initglobs0()
 	am_model.am_P_Cooling = symGetSystemDataByName(am_model.$sys, "P_Cooling");
 	am_model.am_VI_FixtureTravelTime$var = symGetSystemDataByName(am_model.$sys, "VI_FixtureTravelTime");
 	am_model.am_VI_FixtureTravelTime$var->data = (void*)&am_model.am_VI_FixtureTravelTime;
-	am_model.am_stream_R_MaintenanceGuy_1 = symGetSystemDataByName(am_model.$sys, "stream_R_MaintenanceGuy_1");
+	am_model.am_C_Product46 = symGetSystemDataByName(am_model.$sys, "C_Product46");
 	am_model.am_stream_R_Grinder2_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Grinder2_1");
-	am_model.am_stream_R_turner1_1 = symGetSystemDataByName(am_model.$sys, "stream_R_turner1_1");
 	am_model.am_modelsys = symGetSystemDataByName(am_model.$sys, "modelsys");
 	am_model.am_VI_PipeLength$var = symGetSystemDataByName(am_model.$sys, "VI_PipeLength");
 	am_model.am_VI_PipeLength$var->data = (void*)&am_model.am_VI_PipeLength;
@@ -99,12 +107,15 @@ initglobs0()
 	am_model.am_VI_MAXbefortoolchange$var->data = (void*)&am_model.am_VI_MAXbefortoolchange;
 	am_model.am_R_Maintenance = symGetSystemDataByName(am_model.$sys, "R_Maintenance");
 	am_model.am_L_DownCutters = symGetSystemDataByName(am_model.$sys, "L_DownCutters");
+	am_model.am_P_Measure = symGetSystemDataByName(am_model.$sys, "P_Measure");
 	am_model.am_OL_WaitBatchUnloading = symGetSystemDataByName(am_model.$sys, "OL_WaitBatchUnloading");
 	am_model.am_P_Polisher = symGetSystemDataByName(am_model.$sys, "P_Polisher");
 	am_model.am_L_DownPolishers = symGetSystemDataByName(am_model.$sys, "L_DownPolishers");
 	am_model.am_Q_FixtureInPolisher = symGetSystemDataByName(am_model.$sys, "Q_FixtureInPolisher");
+	am_model.am_R_Measure = symGetSystemDataByName(am_model.$sys, "R_Measure");
 	am_model.am_Q_Polisher = symGetSystemDataByName(am_model.$sys, "Q_Polisher");
 	am_model.am_R_Polisher = symGetSystemDataByName(am_model.$sys, "R_Polisher");
+	am_model.am_Q_Measure = symGetSystemDataByName(am_model.$sys, "Q_Measure");
 	am_model.am_stream_R_Cutter_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Cutter_1");
 	am_model.am_AI_index$att = symGetSystemDataByName(am_model.$sys, "AI_index");
 	am_model.am_Q_Buffer40 = symGetSystemDataByName(am_model.$sys, "Q_Buffer40");
@@ -124,6 +135,9 @@ initglobs0()
 	am_model.am_R_Turner1 = symGetSystemDataByName(am_model.$sys, "R_Turner1");
 	am_model.am_Q_DummySurface = symGetSystemDataByName(am_model.$sys, "Q_DummySurface");
 	am_model.am_Q_Conveyor = symGetSystemDataByName(am_model.$sys, "Q_Conveyor");
+	am_model.am_R_Inspector = symGetSystemDataByName(am_model.$sys, "R_Inspector");
+	am_model.am_C_Product49 = symGetSystemDataByName(am_model.$sys, "C_Product49");
+	am_model.am_stream_R_Inspector_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Inspector_1");
 	am_model.am_Q_UnloadingArea = symGetSystemDataByName(am_model.$sys, "Q_UnloadingArea");
 	am_model.am_L_Product40 = symGetSystemDataByName(am_model.$sys, "L_Product40");
 	am_model.am_VI_BatchSize$var = symGetSystemDataByName(am_model.$sys, "VI_BatchSize");
@@ -131,13 +145,13 @@ initglobs0()
 	am_model.am_R_TnSoperator = symGetSystemDataByName(am_model.$sys, "R_TnSoperator");
 	am_model.am_stream_R_Surface_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Surface_1");
 	am_model.am_stream_R_CutOperator_1 = symGetSystemDataByName(am_model.$sys, "stream_R_CutOperator_1");
+	am_model.am_C_Product40 = symGetSystemDataByName(am_model.$sys, "C_Product40");
 	am_model.am_stream_R_TnSoperator_1 = symGetSystemDataByName(am_model.$sys, "stream_R_TnSoperator_1");
 	am_model.am_Q_WareHouse = symGetSystemDataByName(am_model.$sys, "Q_WareHouse");
 	am_model.am_VI_ArrivingTime$var = symGetSystemDataByName(am_model.$sys, "VI_ArrivingTime");
 	am_model.am_VI_ArrivingTime$var->data = (void*)&am_model.am_VI_ArrivingTime;
 	am_model.am_P_DownTimeCutters = symGetSystemDataByName(am_model.$sys, "P_DownTimeCutters");
 	am_model.am_P_WareHouse = symGetSystemDataByName(am_model.$sys, "P_WareHouse");
-	am_model.am_Q_final = symGetSystemDataByName(am_model.$sys, "Q_final");
 	am_model.am_VI_LoadingTime$var = symGetSystemDataByName(am_model.$sys, "VI_LoadingTime");
 	am_model.am_VI_LoadingTime$var->data = (void*)&am_model.am_VI_LoadingTime;
 	am_model.am_VI_CycleTimePolisher$var = symGetSystemDataByName(am_model.$sys, "VI_CycleTimePolisher");
@@ -154,6 +168,7 @@ initglobs0()
 	am_model.am_VI_NumberofTurns2$var = symGetSystemDataByName(am_model.$sys, "VI_NumberofTurns2");
 	am_model.am_VI_NumberofTurns2$var->data = (void*)&am_model.am_VI_NumberofTurns2;
 	am_model.am_stream_R_Maintenance_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Maintenance_1");
+	am_model.am_OL_WaitUnloadingArea = symGetSystemDataByName(am_model.$sys, "OL_WaitUnloadingArea");
 	am_model.am_R_Grinder1 = symGetSystemDataByName(am_model.$sys, "R_Grinder1");
 	am_model.am_A_QptrPolisher$att = symGetSystemDataByName(am_model.$sys, "A_QptrPolisher");
 	am_model.am_Q_Grinder1 = symGetSystemDataByName(am_model.$sys, "Q_Grinder1");
@@ -164,7 +179,7 @@ initglobs0()
 	model_polisher_init(&am_model);
 	model_init_init(&am_model);
 	model_downtimes_init(&am_model);
-	model_surfacetreatment_init(&am_model);
+	model_lowerlane_init(&am_model);
 	{
 		Iter(List, FileList) it = Begin(List, FileList, &((ProcSystem*)am_model.$sys)->files);
 

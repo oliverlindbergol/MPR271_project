@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Hopslagning1\tom_upperlane.dir\
-// Generated:	Fri Nov 23 08:44:50 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\tom_upperlane.dir\
+// Generated:	Sat Nov 24 12:15:34 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -332,7 +332,7 @@ Label7: ; // Step 7
 		}
 		{
 			AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner1", P_Turner1_arriving, localactor, 80);
-			return usefor(am2_R_turner1, 1, this, P_Turner1_arriving, Step 8, am_localargs, ToModelTime(uniform1(am2_stream0, 290, 0), UNITSECONDS));
+			return usefor(am2_R_Turner1, 1, this, P_Turner1_arriving, Step 8, am_localargs, ToModelTime(uniform1(am2_stream0, 290, 0), UNITSECONDS));
 Label8: ; // Step 8
 		}
 		{
@@ -460,7 +460,7 @@ Label6: ; // Step 6
 		}
 		{
 			AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner2", P_Turner2_arriving, localactor, 113);
-			return usefor(am2_R_turner1, 1, this, P_Turner2_arriving, Step 7, am_localargs, ToModelTime(uniform1(am2_stream0, 290, 0), UNITSECONDS));
+			return usefor(am2_R_Turner1, 1, this, P_Turner2_arriving, Step 7, am_localargs, ToModelTime(uniform1(am2_stream0, 290, 0), UNITSECONDS));
 Label7: ; // Step 7
 		}
 		{

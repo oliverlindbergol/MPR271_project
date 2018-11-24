@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Hopslagning1\tom_upperlane.dir\
-// Generated:	Thu Nov 22 15:26:02 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\tom_upperlane.dir\
+// Generated:	Sat Nov 24 12:20:16 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -131,14 +131,16 @@ Velocity Velocity_strvalfunc(char*);
 struct model_struct {
 	System* $sys;
 	queue* am_Q_DummyUnloadingArea;
+	queue* am_Q_Packaging;
+	process* am_P_Packaging;
 	rnstream* am_stream_R_Grinder1_1;
 	queue* am_Q_Buffer2;
 	process* am_die;
 	loadtype* am_L_DownTurner2;
+	attribute* am_AI_InspectionResult$att;
 	attribute* am_AI_CutType$att;
 	queue* am_Q_LoadingProduct;
 	attribute* am_AI_ProdType$att;
-	resource* am_R_MaintenanceGuy;
 	queue* am_Q_LoadingFixture;
 	variable* am_VI_PrevTurner$var;
 	int32 am_VI_PrevTurner;
@@ -150,7 +152,6 @@ struct model_struct {
 	loadtype* am_L_Init;
 	queue* am_Q_Buffer46;
 	loadtype* am_L_DownTurner1;
-	resource* am_R_turner1;
 	variable* am_VI_NumberCycles$var;
 	int32 am_VI_NumberCycles;
 	loadtype* am_L_DownGrinder2;
@@ -168,19 +169,27 @@ struct model_struct {
 	process* am_P_RawMaterialArrival;
 	queue* am_Q_Surface;
 	resource* am_R_Surface;
+	loadtype* am_L_DownTimeMeasure;
 	resource* am_R_Turner2;
+	process* am_P_SurfaceInspection;
 	queue* am_Q_Turner2;
 	attribute* am_A_QPtr$att;
 	process* am_P_Turner2;
+	variable* am_VI_PrevMeasure$var;
+	int32 am_VI_PrevMeasure;
+	queue* am_Q_SurfaceInspection;
 	resource* am_R_CutOperator;
+	rnstream* am_stream_R_Measure_1;
 	process* am_P_DownTimeTurner2;
 	queue* am_Q_Unloading;
+	process* am_P_DownTimeMeasure;
 	process* am_P_DownTimeGrinder2;
 	rnstream* am_stream_R_Turner2_1;
 	process* am_P_Loading;
 	rnstream* am_stream_R_Polisher_1;
 	ordlist* am_OL_FixtureUnload;
 	ordlist* am_OL_ProductLoad;
+	queue* am_Q_Cooling;
 	loadtype* am_L_Product46;
 	variable* am_VI_Numberofcuts$var;
 	int32 *am_VI_Numberofcuts;
@@ -188,9 +197,8 @@ struct model_struct {
 	process* am_P_Cooling;
 	variable* am_VI_FixtureTravelTime$var;
 	int32 am_VI_FixtureTravelTime;
-	rnstream* am_stream_R_MaintenanceGuy_1;
+	counter* am_C_Product46;
 	rnstream* am_stream_R_Grinder2_1;
-	rnstream* am_stream_R_turner1_1;
 	System* am_modelsys;
 	variable* am_VI_PipeLength$var;
 	int32 am_VI_PipeLength;
@@ -199,12 +207,15 @@ struct model_struct {
 	int32 am_VI_MAXbefortoolchange;
 	resource* am_R_Maintenance;
 	loadtype* am_L_DownCutters;
+	process* am_P_Measure;
 	ordlist* am_OL_WaitBatchUnloading;
 	process* am_P_Polisher;
 	loadtype* am_L_DownPolishers;
 	queue* am_Q_FixtureInPolisher;
+	resource* am_R_Measure;
 	queue* am_Q_Polisher;
 	resource* am_R_Polisher;
+	queue* am_Q_Measure;
 	rnstream* am_stream_R_Cutter_1;
 	attribute* am_AI_index$att;
 	queue* am_Q_Buffer40;
@@ -224,6 +235,9 @@ struct model_struct {
 	resource* am_R_Turner1;
 	queue* am_Q_DummySurface;
 	queue* am_Q_Conveyor;
+	resource* am_R_Inspector;
+	counter* am_C_Product49;
+	rnstream* am_stream_R_Inspector_1;
 	queue* am_Q_UnloadingArea;
 	loadtype* am_L_Product40;
 	variable* am_VI_BatchSize$var;
@@ -231,13 +245,13 @@ struct model_struct {
 	resource* am_R_TnSoperator;
 	rnstream* am_stream_R_Surface_1;
 	rnstream* am_stream_R_CutOperator_1;
+	counter* am_C_Product40;
 	rnstream* am_stream_R_TnSoperator_1;
 	queue* am_Q_WareHouse;
 	variable* am_VI_ArrivingTime$var;
 	int32 am_VI_ArrivingTime;
 	process* am_P_DownTimeCutters;
 	process* am_P_WareHouse;
-	queue* am_Q_final;
 	variable* am_VI_LoadingTime$var;
 	int32 am_VI_LoadingTime;
 	variable* am_VI_CycleTimePolisher$var;
@@ -253,6 +267,7 @@ struct model_struct {
 	variable* am_VI_NumberofTurns2$var;
 	int32 am_VI_NumberofTurns2;
 	rnstream* am_stream_R_Maintenance_1;
+	ordlist* am_OL_WaitUnloadingArea;
 	resource* am_R_Grinder1;
 	attribute* am_A_QptrPolisher$att;
 	queue* am_Q_Grinder1;

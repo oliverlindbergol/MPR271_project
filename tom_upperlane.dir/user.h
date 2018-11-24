@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Hopslagning1\tom_upperlane.dir\
-// Generated:	Thu Nov 22 15:26:03 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\tom_upperlane.dir\
+// Generated:	Sat Nov 24 12:20:16 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -152,6 +152,7 @@ typedef struct loadatt {
 		int32 am_AI_index;	/* AI_index */
 		int32 am_AI_PolisherIndex;	/* AI_PolisherIndex */
 		queue* am_A_QptrPolisher;	/* A_QptrPolisher */
+		int32 am_AI_InspectionResult;	/* AI_InspectionResult */
 	} am_model;
 } loadatt;
 

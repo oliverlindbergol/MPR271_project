@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Hopslagning1\tom_upperlane.dir\
-// Generated:	Thu Nov 22 15:26:02 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\tom_upperlane.dir\
+// Generated:	Sat Nov 24 12:20:16 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -27,7 +27,7 @@
 
 struct model_struct am_model;
 
-char CommandName[] = "C:/AutoModx64/12_6_1/bin/amod.exe";
+char CommandName[] = "D:/Oliver/MPSYS/SOPS/AutoMod_x64_12.6.1.19/bin/amod.exe";
 extern ASIWindow WORKMENU;
 
 FILE** imp_stdin;
@@ -147,6 +147,9 @@ get_ldatt_address(load* this, int32 index, int32* d)
 	case 7:
 		data = (void*)&this->attribute->am_model.am_A_QptrPolisher;
 		break;
+	case 8:
+		data = (void*)&this->attribute->am_model.am_AI_InspectionResult;
+		break;
 	}
 	return data;
 }
@@ -164,6 +167,7 @@ set_attdata(load* this)
 	am_model.am_AI_index$att->data = (void*)&this->attribute->am_model.am_AI_index;
 	am_model.am_AI_PolisherIndex$att->data = (void*)&this->attribute->am_model.am_AI_PolisherIndex;
 	am_model.am_A_QptrPolisher$att->data = (void*)&this->attribute->am_model.am_A_QptrPolisher;
+	am_model.am_AI_InspectionResult$att->data = (void*)&this->attribute->am_model.am_AI_InspectionResult;
 }
 
 char*

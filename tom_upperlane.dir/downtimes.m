@@ -3,7 +3,7 @@ begin P_DownTimePolishers arriving procedure
     while 1=1 do begin
         wait for exponential 90 min /* MTTF */
         take down R_Polisher(AI_index)
-        use R_MaintenanceGuy for gamma 12, 2 min /* MTTR */ 
+        use R_Maintenance for gamma 12, 2 min /* MTTR */ 
         bring up R_Polisher(AI_index)
     end
 end
@@ -57,4 +57,14 @@ begin P_DownTimeGrinder2 arriving procedure
 		bring up R_Grinder2
 	end
 end
+
+begin P_DownTimeMeasure arriving procedure
+    while 1=1 do begin
+        wait for exponential 20 min /* MTTF */
+        take down R_Measure
+        use R_Inspector for 1 sec /* MTTR */ 
+        wait for 2.5 min
+        bring up R_Measure
+    end
+end 
 
