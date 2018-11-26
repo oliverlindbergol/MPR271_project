@@ -1,0 +1,935 @@
+<?xml version="1.0"?>
+<AutoStatModelDefinition ASVersion="5.0.5.16" ASCultureInfo="sv-SE">
+	<AutoStat.RunContainer>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="1" RngId="1" XML_RandomSeed="1" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="4">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>2,711164</Value>
+					<Value>342,134876</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>8,587719</Value>
+					<Value>490,553015</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>4,051462</Value>
+					<Value>354,575566</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>38</Value>
+					<Value>2325</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="2" RngId="2" XML_RandomSeed="2" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>4,556671</Value>
+					<Value>259,353116</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>7,130202</Value>
+					<Value>518,285847</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>1,906077</Value>
+					<Value>376,634601</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>26</Value>
+					<Value>2267</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="3" RngId="3" XML_RandomSeed="3" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>5,696395</Value>
+					<Value>351,809344</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>2,026436</Value>
+					<Value>629,122437</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>9,988709</Value>
+					<Value>379,182054</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>34</Value>
+					<Value>2575</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="4" RngId="4" XML_RandomSeed="4" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="4">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>0</Value>
+					<Value>296,406026</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>18,471917</Value>
+					<Value>654,424386</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>0,814237</Value>
+					<Value>395,055984</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>41</Value>
+					<Value>2530</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="5" RngId="5" XML_RandomSeed="5" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="4">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>0</Value>
+					<Value>310,568821</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>5,502898</Value>
+					<Value>497,953823</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>7,291563</Value>
+					<Value>362,432279</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>28</Value>
+					<Value>2289</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="6" RngId="6" XML_RandomSeed="6" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>5,604977</Value>
+					<Value>315,096694</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>5,647886</Value>
+					<Value>610,062724</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>9,005002</Value>
+					<Value>358,98024</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>33</Value>
+					<Value>2414</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="7" RngId="7" XML_RandomSeed="7" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="5">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>0</Value>
+					<Value>344,9474</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>6,123323</Value>
+					<Value>519,076348</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>3,409386</Value>
+					<Value>392,964459</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>21</Value>
+					<Value>2426</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="8" RngId="8" XML_RandomSeed="8" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>0,188936</Value>
+					<Value>336,806453</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>0,173556</Value>
+					<Value>577,449726</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>4,211499</Value>
+					<Value>378,647936</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>14</Value>
+					<Value>2532</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="9" RngId="9" XML_RandomSeed="9" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="4">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>2,363022</Value>
+					<Value>304,604697</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>4,378187</Value>
+					<Value>537,510964</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>4,670343</Value>
+					<Value>385,736537</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>27</Value>
+					<Value>2375</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="10" RngId="10" XML_RandomSeed="10" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>6,1702</Value>
+					<Value>274,883441</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>5,607482</Value>
+					<Value>550,106732</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>2,229707</Value>
+					<Value>344,237385</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>27</Value>
+					<Value>2333</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="11" RngId="11" XML_RandomSeed="11" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>0</Value>
+					<Value>258,038935</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>10,330664</Value>
+					<Value>557,11927</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>0</Value>
+					<Value>358,904397</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>27</Value>
+					<Value>2232</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="12" RngId="12" XML_RandomSeed="12" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>0,994755</Value>
+					<Value>254,781658</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>3,862388</Value>
+					<Value>494,576646</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>3,302682</Value>
+					<Value>364,919923</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>13</Value>
+					<Value>2272</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="13" RngId="13" XML_RandomSeed="13" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>0,475031</Value>
+					<Value>262,455678</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>2,752401</Value>
+					<Value>617,751534</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>3,591807</Value>
+					<Value>401,427719</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>20</Value>
+					<Value>2424</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="14" RngId="14" XML_RandomSeed="14" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>6,966965</Value>
+					<Value>274,478523</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>3,096046</Value>
+					<Value>565,703902</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>9,124039</Value>
+					<Value>382,078295</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>39</Value>
+					<Value>2327</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="15" RngId="15" XML_RandomSeed="15" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1 Days</Snap>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>3,110696</Value>
+					<Value>272,541765</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>10,431232</Value>
+					<Value>580,489621</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>12,559612</Value>
+					<Value>341,084154</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>46</Value>
+					<Value>2317</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="16" RngId="16" XML_RandomSeed="16" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>288,88903</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>505,688895</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>378,869375</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2366</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="17" RngId="17" XML_RandomSeed="17" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>353,536231</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>504,920409</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>389,490148</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2500</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="18" RngId="18" XML_RandomSeed="18" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>266,976333</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>537,48141</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>413,259223</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2464</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="19" RngId="19" XML_RandomSeed="19" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>286,810106</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>540,38528</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>317,055884</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2333</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="20" RngId="20" XML_RandomSeed="20" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>247,529221</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>503,576484</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>410,282214</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2392</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="21" RngId="21" XML_RandomSeed="21" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>331,883148</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>587,997828</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>340,230029</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2512</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="22" RngId="22" XML_RandomSeed="22" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="4">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>322,879454</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>634,402613</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>364,643213</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2673</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="23" RngId="23" XML_RandomSeed="23" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>258,441103</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>617,80283</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>330,524114</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2379</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="24" RngId="24" XML_RandomSeed="24" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>233,970319</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>598,563215</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>319,982717</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2256</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="25" RngId="25" XML_RandomSeed="25" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>345,001503</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>553,722287</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>445,471584</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2679</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="26" RngId="26" XML_RandomSeed="26" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>274,389126</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>568,8055</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>398,762097</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2482</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="27" RngId="27" XML_RandomSeed="27" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>290,807089</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>596,321356</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>464,329827</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2619</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="28" RngId="28" XML_RandomSeed="28" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>254,234387</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>592,014389</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>366,346622</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2424</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="29" RngId="29" XML_RandomSeed="29" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>270,930576</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>522,109248</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>397,15808</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2347</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+		<AutoStat.Run IsErrorRun="False" FValsHashCode="0" Id="30" RngId="30" XML_RandomSeed="30" Machine="" ServerInfo="Local (v12.6.1.19)" RunTime="3">
+			<AutoStat.RunControl>
+				<Snap>1600 Hours</Snap>
+			</AutoStat.RunControl>
+			<AutoStat.FactorValuePairList />
+			<AutoStat.AuditResultList>
+				<Message />
+				<AutoMod />
+				<Response />
+			</AutoStat.AuditResultList>
+			<AllResponseData>
+				<ResponseData RespKeyID="-2147483646">
+					<Value>349,390068</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483645">
+					<Value>495,669766</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483644">
+					<Value>379,392216</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483647">
+					<Value>0</Value>
+				</ResponseData>
+				<ResponseData RespKeyID="-2147483643">
+					<Value>2512</Value>
+				</ResponseData>
+			</AllResponseData>
+		</AutoStat.Run>
+	</AutoStat.RunContainer>
+</AutoStatModelDefinition>
