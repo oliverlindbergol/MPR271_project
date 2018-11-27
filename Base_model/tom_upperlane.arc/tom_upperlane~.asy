@@ -879,12 +879,12 @@ begin P_Turner2 arriving procedure
 	
 	if VI_NumberofTurns2 >= VI_MAXbefortoolchange then begin
 		get R_TnSoperator
-		use R_Turner1 for normal 310,30 sec
+		use R_Turner2 for normal 310,30 sec
 		free R_TnSoperator
 		set VI_NumberofTurns2 = 0
 	end
 	
-	use R_Turner1 for 290 sec
+	use R_Turner2 for 290 sec
 	inc VI_NumberofTurns2 by 1 
 	//if Q_Buffer2 remaining space = 0 then 
 	//	wait to be ordered on OL_Turner2Wait
@@ -1052,6 +1052,8 @@ begin P_Init arriving procedure
     set VI_BatchSize = 7
 
     set Q_WareHouse capacity = 50
+    set Q_Buffer1 capacity = 4
+    set Q_Buffer2 capacity = 2
     set Q_Buffer3 capacity = 7
     set Q_Buffer40 capacity = 8
     set Q_Buffer46 capacity = 8
@@ -1197,7 +1199,7 @@ begin P_SurfaceTreatment arriving procedure
 
     if VI_NumberCycles = 4 then
         begin
-            wait for uniform 545, 95 sec //Refill liquid
+            wait for uniform 550, 100 sec //Refill liquid
             set VI_NumberCycles = 0
         end
 
@@ -1238,7 +1240,7 @@ begin P_Measure arriving procedure
 
     set VI_PrevMeasure = AI_ProdType
 
-    wait for 295 sec //Measuring time
+    use R_Measure for 295 sec //Measuring time
 
     send to P_SurfaceInspection
 end

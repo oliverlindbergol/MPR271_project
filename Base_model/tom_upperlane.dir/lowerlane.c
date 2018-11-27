@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Project\MPR271_project\tom_upperlane.dir\
-// Generated:	Mon Nov 26 16:38:56 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
+// Generated:	Tue Nov 27 11:07:52 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -122,7 +122,7 @@ Label7: ; // Step 7
 			if (am2_VI_NumberCycles == 4) {
 				{
 					AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 17);
-					if (waitfor(ToModelTime(uniform1(am2_stream0, 545, 95), UNITSECONDS), this, P_SurfaceTreatment_arriving, Step 8, am_localargs) == Delayed)
+					if (waitfor(ToModelTime(uniform1(am2_stream0, 550, 100), UNITSECONDS), this, P_SurfaceTreatment_arriving, Step 8, am_localargs) == Delayed)
 						return Delayed;
 Label8: ; // Step 8
 				}
@@ -311,8 +311,7 @@ Label4: ; // Step 4
 		}
 		{
 			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 58);
-			if (waitfor(ToModelTime(295, UNITSECONDS), this, P_Measure_arriving, Step 5, am_localargs) == Delayed)
-				return Delayed;
+			return usefor(am2_R_Measure, 1, this, P_Measure_arriving, Step 5, am_localargs, ToModelTime(295, UNITSECONDS));
 Label5: ; // Step 5
 		}
 		{

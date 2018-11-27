@@ -147,4 +147,5 @@ getHilight
 setHilight
 getHilight
 getHilight
+in check_keyboard2(), after switch, key is p
 in check_keyboard2(), after switch, key is g

@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	C:\Users\tomgy\SimOfProd\Project\MPR271_project\tom_upperlane.dir\
-// Generated:	Mon Nov 26 16:29:36 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
+// Generated:	Tue Nov 27 10:55:14 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -120,85 +120,95 @@ P_Init_arriving(load* this, int32 step, void* args)
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 31);
-			QueSetCapacity(am2_Q_Buffer3, 7);
+			QueSetCapacity(am2_Q_Buffer1, 4);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 32);
-			QueSetCapacity(am2_Q_Buffer40, 8);
+			QueSetCapacity(am2_Q_Buffer2, 2);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 33);
-			QueSetCapacity(am2_Q_Buffer46, 8);
+			QueSetCapacity(am2_Q_Buffer3, 7);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 34);
-			QueSetCapacity(am2_Q_Buffer49, 8);
+			QueSetCapacity(am2_Q_Buffer40, 8);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 35);
-			QueSetCapacity(am2_Q_Fixture, 3);
+			QueSetCapacity(am2_Q_Buffer46, 8);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 36);
-			QueSetCapacity(am2_Q_Conveyor, 3);
+			QueSetCapacity(am2_Q_Buffer49, 8);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 37);
-			QueSetCapacity(am2_Q_FixtureInPolisher, 3);
+			QueSetCapacity(am2_Q_Fixture, 3);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 38);
-			QueSetCapacity(am2_Q_UnloadingArea, 7);
+			QueSetCapacity(am2_Q_Conveyor, 3);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 39);
-			QueSetCapacity(am2_Q_DummyUnloadingArea, am2_VI_BatchSize - 1);
+			QueSetCapacity(am2_Q_FixtureInPolisher, 3);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 40);
-			QueSetCapacity(am2_Q_DummySurface, am2_VI_BatchSize - 1);
+			QueSetCapacity(am2_Q_UnloadingArea, 7);
 			EntityChanged(0x00010000);
 		}
 		{
 			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 41);
+			QueSetCapacity(am2_Q_DummyUnloadingArea, am2_VI_BatchSize - 1);
+			EntityChanged(0x00010000);
+		}
+		{
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 42);
+			QueSetCapacity(am2_Q_DummySurface, am2_VI_BatchSize - 1);
+			EntityChanged(0x00010000);
+		}
+		{
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 43);
 			QueSetCapacity(am2_Q_Cooling, 9);
 			EntityChanged(0x00010000);
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 46);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 48);
 			am2_VI_Numberofcuts[1] = 9;
 			EntityChanged(0x01000000);
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 47);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 49);
 			am2_VI_Numberofcuts[2] = 8;
 			EntityChanged(0x01000000);
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 48);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 50);
 			am2_VI_Numberofcuts[3] = 7;
 			EntityChanged(0x01000000);
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 50);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 52);
 			am2_VI_MAXbefortoolchange = 8000;
 			EntityChanged(0x01000000);
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 54);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 56);
 			create_l(1, am2_L_Pipe, am2_P_RawMaterialArrival, 0.0);
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 55);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_Init", P_Init_arriving, localactor, 57);
 			create_l(3, am2_L_Fixture, am2_P_Loading, 0.0);
 		}
 	}
@@ -227,14 +237,14 @@ P_RawMaterialArrival_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_RawMaterialArrival", P_RawMaterialArrival_arriving, localactor, 60);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_RawMaterialArrival", P_RawMaterialArrival_arriving, localactor, 62);
 			while (1 == 1) {
 				{
-					AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_RawMaterialArrival", P_RawMaterialArrival_arriving, localactor, 61);
+					AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_RawMaterialArrival", P_RawMaterialArrival_arriving, localactor, 63);
 					clone(this, 10, am2_P_WareHouse, NULL);
 				}
 				{
-					AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_RawMaterialArrival", P_RawMaterialArrival_arriving, localactor, 62);
+					AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_RawMaterialArrival", P_RawMaterialArrival_arriving, localactor, 64);
 					if (waitfor(ToModelTime(am2_VI_ArrivingTime, UNITHOURS), this, P_RawMaterialArrival_arriving, Step 2, am_localargs) == Delayed)
 						return Delayed;
 Label2: ; // Step 2
@@ -268,16 +278,16 @@ P_WareHouse_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 67);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 69);
 			pushppa(this, P_WareHouse_arriving, Step 2, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_WareHouse);
 			return Continue; // go move into territory
 Label2: ; // Step 2
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 68);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 70);
 			if (QueGetRemCap(ValidPtr(&(am2_Q_Cutter[1]), 50, queue*)) == 0 && QueGetRemCap(ValidPtr(&(am2_Q_Cutter[2]), 50, queue*)) == 0) {
-				AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 69);
+				AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 71);
 				return waitorder(am2_OL_WaitForCutter, this, P_WareHouse_arriving, Step 3, am_localargs);
 Label3: ; // Step 3
 				if (!this->inLeaveProc && this->nextproc) {
@@ -287,7 +297,7 @@ Label3: ; // Step 3
 			}
 		}
 		{
-			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 70);
+			AMDebugger("init.m", "Arriving procedure", "tom_upperlane.P_WareHouse", P_WareHouse_arriving, localactor, 72);
 			this->nextproc = am2_P_Cutter; /* send to ... */
 			EntityChanged(W_LOAD);
 			retval = Continue;

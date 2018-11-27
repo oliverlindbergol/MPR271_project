@@ -105,12 +105,12 @@ begin P_Turner2 arriving procedure
 	
 	if VI_NumberofTurns2 >= VI_MAXbefortoolchange then begin
 		get R_TnSoperator
-		use R_Turner1 for normal 310,30 sec
+		use R_Turner2 for normal 310,30 sec
 		free R_TnSoperator
 		set VI_NumberofTurns2 = 0
 	end
 	
-	use R_Turner1 for 290 sec
+	use R_Turner2 for 290 sec
 	inc VI_NumberofTurns2 by 1 
 	//if Q_Buffer2 remaining space = 0 then 
 	//	wait to be ordered on OL_Turner2Wait

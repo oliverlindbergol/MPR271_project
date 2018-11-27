@@ -14,7 +14,7 @@ begin P_SurfaceTreatment arriving procedure
 
     if VI_NumberCycles = 4 then
         begin
-            wait for uniform 545, 95 sec //Refill liquid
+            wait for uniform 550, 100 sec //Refill liquid
             set VI_NumberCycles = 0
         end
 
@@ -55,7 +55,7 @@ begin P_Measure arriving procedure
 
     set VI_PrevMeasure = AI_ProdType
 
-    wait for 295 sec //Measuring time
+    use R_Measure for 295 sec //Measuring time
 
     send to P_SurfaceInspection
 end

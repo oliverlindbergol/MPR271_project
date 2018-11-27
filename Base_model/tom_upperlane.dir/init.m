@@ -28,6 +28,8 @@ begin P_Init arriving procedure
     set VI_BatchSize = 7
 
     set Q_WareHouse capacity = 50
+    set Q_Buffer1 capacity = 4
+    set Q_Buffer2 capacity = 2
     set Q_Buffer3 capacity = 7
     set Q_Buffer40 capacity = 8
     set Q_Buffer46 capacity = 8
