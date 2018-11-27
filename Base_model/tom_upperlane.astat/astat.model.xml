@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<AutoStatModelDefinition ASVersion="5.0.5.16" ASCultureInfo="sv-SE" ASRepOpt="True">
+	<LastChanged>
+		<Entry Key="tom_upperlane.exe" Value="1460646290" />
+		<Entry Key="tom_upperlane.dll" Value="1543227537" />
+	</LastChanged>
+	<AutoStat.DataFileContainer />
+	<AutoStat.FactorContainer />
+	<AutoStat.ResponseContainer>
+		<AutoStat.AMResponse ReportAs="" ReportTime="1" ReportUnits="Days" XMLSerializeKeyID="-2147483647" Name="tom_upperlane:Q_Packaging:Average Claim Count" CacheResults="False" SystemName="tom_upperlane" EntityType="Queue" EntityName="Q_Packaging" StatisticName="Average Claim Count" />
+		<AutoStat.AMResponse ReportAs="" ReportTime="1" ReportUnits="Days" XMLSerializeKeyID="-2147483646" Name="tom_upperlane:C_Product40:Average Claim Count" CacheResults="False" SystemName="tom_upperlane" EntityType="Counter" EntityName="C_Product40" StatisticName="Average Claim Count" />
+		<AutoStat.AMResponse ReportAs="" ReportTime="1" ReportUnits="Days" XMLSerializeKeyID="-2147483645" Name="tom_upperlane:C_Product46:Average Claim Count" CacheResults="False" SystemName="tom_upperlane" EntityType="Counter" EntityName="C_Product46" StatisticName="Average Claim Count" />
+		<AutoStat.AMResponse ReportAs="" ReportTime="1" ReportUnits="Days" XMLSerializeKeyID="-2147483644" Name="tom_upperlane:C_Product49:Average Claim Count" CacheResults="False" SystemName="tom_upperlane" EntityType="Counter" EntityName="C_Product49" StatisticName="Average Claim Count" />
+		<AutoStat.AMResponse ReportAs="raw total" ReportTime="1" ReportUnits="Days" XMLSerializeKeyID="-2147483643" Name="tom_upperlane:Q_Packaging:Total Claim Count" CacheResults="False" SystemName="tom_upperlane" EntityType="Queue" EntityName="Q_Packaging" StatisticName="Total Claim Count" />
+	</AutoStat.ResponseContainer>
+	<AutoStat.AuditContainer AuditResultLimit="30" ErrorKeyWords="Error Warning" />
+	<AutoStat.AnalysisContainer>
+		<AutoStat.SingleScenarioAnalysis CRN="0" IncludeInDoAll="True" Name="Single Scenario" XMLSerialize_Replications="15" HasCustomRunControl="True" WarmupTime="1" WarmupUnits="Days" SnapLength="1600" SnapUnits="Hours" FirstRun="1" />
+		<AutoStat.SingleScenarioAnalysis CRN="0" IncludeInDoAll="True" Name="Single Scenario 1" XMLSerialize_Replications="3" HasCustomRunControl="True" WarmupTime="0" WarmupUnits="Days" SnapLength="1600" SnapUnits="Hours" FirstRun="16" />
+		<AutoStat.SingleScenarioAnalysis CRN="0" IncludeInDoAll="True" Name="Single Scenario 2" XMLSerialize_Replications="15" HasCustomRunControl="True" WarmupTime="0" WarmupUnits="Days" SnapLength="1600" SnapUnits="Hours" FirstRun="19" />
+	</AutoStat.AnalysisContainer>
+	<AutoStat.ServerContainer>
+		<AutoStat.RunServer Enabled="True" Name="Local" NumRuns="1" Port="0" Version="12.6.1.19" />
+	</AutoStat.ServerContainer>
+	<AutoStat.ModelProperties AutoSave="True" AutoSaveTime="30" AutoSaveTimeUnits="Minutes" CRN="True" ErrorRunLimit="5" MaximumExecutionTime="1" MaximumExecutionTimeUnits="Days" Random="True" RepeatErrorRuns="True" MessageFileViewer="notepad.exe" SampleTime="10" SampleTimeUnits="Days" SeedIncrement="10000" StopLongRuns="False" Warmup="True" WarmupTime="1" WarmupTimeUnits="Days" DefaultCL="0.9" />
+</AutoStatModelDefinition>

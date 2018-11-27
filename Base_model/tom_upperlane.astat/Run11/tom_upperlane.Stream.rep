@@ -1,0 +1,35 @@
+Name	Total_Entries	
+@1:00:00:00.00
+stream0	552	
+stream_R_CutOperator_1	0	
+stream_R_Cutter_1(1)	0	
+stream_R_Cutter_1(2)	0	
+stream_R_TnSoperator_1	0	
+stream_R_Turner1_1	0	
+stream_R_Turner2_1	0	
+stream_R_Grinder1_1	0	
+stream_R_Maintenance_1	0	
+stream_R_Grinder2_1	0	
+stream_R_Polisher_1(1)	0	
+stream_R_Polisher_1(2)	0	
+stream_R_Polisher_1(3)	0	
+stream_R_Surface_1	0	
+stream_R_Measure_1	0	
+stream_R_Inspector_1	0	
+@67:16:00:00.00
+stream0	38620	
+stream_R_CutOperator_1	0	
+stream_R_Cutter_1(1)	0	
+stream_R_Cutter_1(2)	0	
+stream_R_TnSoperator_1	0	
+stream_R_Turner1_1	0	
+stream_R_Turner2_1	0	
+stream_R_Grinder1_1	0	
+stream_R_Maintenance_1	0	
+stream_R_Grinder2_1	0	
+stream_R_Polisher_1(1)	0	
+stream_R_Polisher_1(2)	0	
+stream_R_Polisher_1(3)	0	
+stream_R_Surface_1	0	
+stream_R_Measure_1	0	
+stream_R_Inspector_1	0	

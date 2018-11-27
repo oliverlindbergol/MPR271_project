@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AutoModResponses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AutoModResponses.xsd">
+	<AutoModVersion>12.6.1.19</AutoModVersion>
+	<ModifVersion>5.0</ModifVersion>
+	<ObjectType>
+		<Name>Process</Name>
+		<TableName>process</TableName>
+		<Response>
+			<Field>TotalClaims</Field>
+			<DisplayName>Total Claim Count</DisplayName>
+			<ColumnName>Total_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentClaims</Field>
+			<DisplayName>Current Claim Count</DisplayName>
+			<ColumnName>Current_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>AverageClaims</Field>
+			<DisplayName>Average Claim Count</DisplayName>
+			<ColumnName>Average_Claim_Count</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>Capacity</Field>
+			<DisplayName>Capacity</DisplayName>
+			<ColumnName>Capacity</ColumnName>
+			<DataType>infiniteInteger</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>MaxClaims</Field>
+			<DisplayName>Max Claims</DisplayName>
+			<ColumnName>Max_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinClaims</Field>
+			<DisplayName>Min Claims</DisplayName>
+			<ColumnName>Min_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>Util</Field>
+			<DisplayName>Utilization</DisplayName>
+			<ColumnName>Utilization</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>AVTime</Field>
+			<DisplayName>Average Time Per Claim</DisplayName>
+			<ColumnName>Average_Time_Per_Claim</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>AVWait</Field>
+			<DisplayName>Average Wait Time</DisplayName>
+			<ColumnName>Average_Wait_Time</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>TotalTraffic</Field>
+			<DisplayName>Total Traffic Count</DisplayName>
+			<ColumnName>Total_Traffic_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentTraffic</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentTraffic</Field>
+			<DisplayName>Current Traffic Count</DisplayName>
+			<ColumnName>Current_Traffic_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>AverageTraffic</Field>
+			<DisplayName>Average Traffic Count</DisplayName>
+			<ColumnName>Average_Traffic_Count</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>TrafficLimit</Field>
+			<DisplayName>Traffic Limit</DisplayName>
+			<ColumnName>Traffic_Limit</ColumnName>
+			<DataType>infiniteInteger</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>MaxTraffic</Field>
+			<DisplayName>Max Traffic</DisplayName>
+			<ColumnName>Max_Traffic</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinTraffic</Field>
+			<DisplayName>Min Traffic</DisplayName>
+			<ColumnName>Min_Traffic</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>TrafficUtil</Field>
+			<DisplayName>Traffic Utilization</DisplayName>
+			<ColumnName>Traffic_Utilization</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>TrafficAVTime</Field>
+			<DisplayName>Traffic Average Time Per Claim</DisplayName>
+			<ColumnName>Traffic_Ave_Time_Per_Claim</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalTraffic</StatBasis>
+		</Response>
+		<Response>
+			<Field>TrafficAVWait</Field>
+			<DisplayName>TrafficAverage Wait Time</DisplayName>
+			<ColumnName>Traffic_Ave_Wait_Time</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalTraffic</StatBasis>
+		</Response>
+		<Response>
+			<Field>TotalWaiting</Field>
+			<DisplayName>Total Waiting</DisplayName>
+			<ColumnName>Total_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentWaiting</Field>
+			<DisplayName>Current Waiting</DisplayName>
+			<ColumnName>Current_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>MaxWait</Field>
+			<DisplayName>Maximum Waiting</DisplayName>
+			<ColumnName>Max_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinWait</Field>
+			<DisplayName>Minimum Waiting</DisplayName>
+			<ColumnName>Min_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>AveWaiting</Field>
+			<DisplayName>Average Waiting</DisplayName>
+			<ColumnName>Average_Waiting</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>AveTimeWait</Field>
+			<DisplayName>Average Time Per Wait</DisplayName>
+			<ColumnName>Average_Time_Per_Wait</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+	</ObjectType>
+	<ObjectType>
+		<Name>Queue</Name>
+		<TableName>queue</TableName>
+		<Response>
+			<Field>TotalClaims</Field>
+			<DisplayName>Total Claim Count</DisplayName>
+			<ColumnName>Total_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentClaims</Field>
+			<DisplayName>Current Claim Count</DisplayName>
+			<ColumnName>Current_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>AverageClaims</Field>
+			<DisplayName>Average Claim Count</DisplayName>
+			<ColumnName>Average_Claim_Count</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>Capacity</Field>
+			<DisplayName>Capacity</DisplayName>
+			<ColumnName>Capacity</ColumnName>
+			<DataType>infiniteInteger</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>MaxClaims</Field>
+			<DisplayName>Max Claims</DisplayName>
+			<ColumnName>Max_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinClaims</Field>
+			<DisplayName>Min Claims</DisplayName>
+			<ColumnName>Min_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>Util</Field>
+			<DisplayName>Utilization</DisplayName>
+			<ColumnName>Utilization</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>AVTime</Field>
+			<DisplayName>Average Time Per Claim</DisplayName>
+			<ColumnName>Average_Time_Per_Claim</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>AVWait</Field>
+			<DisplayName>Average Wait Time</DisplayName>
+			<ColumnName>Average_Wait_Time</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>QueueColor</Field>
+			<DisplayName>Queue Color</DisplayName>
+			<ColumnName>Queue_Color</ColumnName>
+			<DataType>String</DataType>
+			<StatType>Other</StatType>
+		</Response>
+		<Response>
+			<Field>TotalWaiting</Field>
+			<DisplayName>Total Waiting</DisplayName>
+			<ColumnName>Total_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentWaiting</Field>
+			<DisplayName>Current Waiting</DisplayName>
+			<ColumnName>Current_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>MaxWait</Field>
+			<DisplayName>Maximum Waiting</DisplayName>
+			<ColumnName>Max_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinWait</Field>
+			<DisplayName>Minimum Waiting</DisplayName>
+			<ColumnName>Min_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>AveWaiting</Field>
+			<DisplayName>Average Waiting</DisplayName>
+			<ColumnName>Average_Waiting</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>AveTimeWait</Field>
+			<DisplayName>Average Time Per Wait</DisplayName>
+			<ColumnName>Average_Time_Per_Wait</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+	</ObjectType>
+	<ObjectType>
+		<Name>Counter</Name>
+		<TableName>counter</TableName>
+		<Response>
+			<Field>TotalClaims</Field>
+			<DisplayName>Total Claim Count</DisplayName>
+			<ColumnName>Total_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentClaims</Field>
+			<DisplayName>Current Claim Count</DisplayName>
+			<ColumnName>Current_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>AverageClaims</Field>
+			<DisplayName>Average Claim Count</DisplayName>
+			<ColumnName>Average_Claim_Count</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>Capacity</Field>
+			<DisplayName>Capacity</DisplayName>
+			<ColumnName>Capacity</ColumnName>
+			<DataType>infiniteInteger</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>MaxClaims</Field>
+			<DisplayName>Max Claims</DisplayName>
+			<ColumnName>Max_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinClaims</Field>
+			<DisplayName>Min Claims</DisplayName>
+			<ColumnName>Min_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>Util</Field>
+			<DisplayName>Utilization</DisplayName>
+			<ColumnName>Utilization</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>AVTime</Field>
+			<DisplayName>Average Time Per Claim</DisplayName>
+			<ColumnName>Average_Time_Per_Claim</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>AVWait</Field>
+			<DisplayName>Average Wait Time</DisplayName>
+			<ColumnName>Average_Wait_Time</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>TotalWaiting</Field>
+			<DisplayName>Total Waiting</DisplayName>
+			<ColumnName>Total_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentWaiting</Field>
+			<DisplayName>Current Waiting</DisplayName>
+			<ColumnName>Current_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>MaxWait</Field>
+			<DisplayName>Maximum Waiting</DisplayName>
+			<ColumnName>Max_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinWait</Field>
+			<DisplayName>Minimum Waiting</DisplayName>
+			<ColumnName>Min_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>AveWaiting</Field>
+			<DisplayName>Average Waiting</DisplayName>
+			<ColumnName>Average_Waiting</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>AveTimeWait</Field>
+			<DisplayName>Average Time Per Wait</DisplayName>
+			<ColumnName>Average_Time_Per_Wait</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+	</ObjectType>
+	<ObjectType>
+		<Name>OrderList</Name>
+		<TableName>orderlist</TableName>
+		<Response>
+			<Field>TotUsage</Field>
+			<DisplayName>Total Usage</DisplayName>
+			<ColumnName>Total_Usage</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurUsage</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurUsage</Field>
+			<DisplayName>Current Usage</DisplayName>
+			<ColumnName>Current_Usage</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>AveUsage</Field>
+			<DisplayName>Average Usage</DisplayName>
+			<ColumnName>Average_Usage</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>MaxUsage</Field>
+			<DisplayName>Maximum Usage</DisplayName>
+			<ColumnName>Maximum_Usage</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinUsage</Field>
+			<DisplayName>Minimum Usage</DisplayName>
+			<ColumnName>Minimum_Usage</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>AVTime</Field>
+			<DisplayName>Average Time Usage</DisplayName>
+			<ColumnName>Average_Time_Usage</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotUsage</StatBasis>
+		</Response>
+		<Response>
+			<Field>TotBOFilled</Field>
+			<DisplayName>Total Backorders Filled</DisplayName>
+			<ColumnName>Total_Backorders_Filled</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>TotBO</Field>
+			<DisplayName>Total Backordered</DisplayName>
+			<ColumnName>Total_Backordered</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentBO</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentBO</Field>
+			<DisplayName>Current Backordered</DisplayName>
+			<ColumnName>Current_Backordered</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>AveBO</Field>
+			<DisplayName>Average Backordered</DisplayName>
+			<ColumnName>Average_Backordered</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>MaxBO</Field>
+			<DisplayName>Maximum Backordered</DisplayName>
+			<ColumnName>Maximum_Backordered</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinBO</Field>
+			<DisplayName>Minimum Backordered</DisplayName>
+			<ColumnName>Minimum_Backordered</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+	</ObjectType>
+	<ObjectType>
+		<Name>Resource</Name>
+		<TableName>resource</TableName>
+		<Response>
+			<Field>TotalClaims</Field>
+			<DisplayName>Total Claim Count</DisplayName>
+			<ColumnName>Total_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentClaims</Field>
+			<DisplayName>Current Claim Count</DisplayName>
+			<ColumnName>Current_Claim_Count</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>AverageClaims</Field>
+			<DisplayName>Average Claim Count</DisplayName>
+			<ColumnName>Average_Claim_Count</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>Capacity</Field>
+			<DisplayName>Capacity</DisplayName>
+			<ColumnName>Capacity</ColumnName>
+			<DataType>infiniteInteger</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>MaxClaims</Field>
+			<DisplayName>Max Claims</DisplayName>
+			<ColumnName>Max_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinClaims</Field>
+			<DisplayName>Min Claims</DisplayName>
+			<ColumnName>Min_Claims</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>Util</Field>
+			<DisplayName>Utilization</DisplayName>
+			<ColumnName>Utilization</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Continuous</StatType>
+		</Response>
+		<Response>
+			<Field>AVTime</Field>
+			<DisplayName>Average Time Per Claim</DisplayName>
+			<ColumnName>Average_Time_Per_Claim</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>AVWait</Field>
+			<DisplayName>Average Wait Time</DisplayName>
+			<ColumnName>Average_Wait_Time</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalClaims</StatBasis>
+		</Response>
+		<Response>
+			<Field>Status</Field>
+			<DisplayName>Status</DisplayName>
+			<ColumnName>Status</ColumnName>
+			<DataType>String</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>State</Field>
+			<DisplayName>State</DisplayName>
+			<ColumnName>State</ColumnName>
+			<DataType>String</DataType>
+			<StatType>Attribute</StatType>
+		</Response>
+		<Response>
+			<Field>TotalWaiting</Field>
+			<DisplayName>Total Waiting</DisplayName>
+			<ColumnName>Total_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentWaiting</Field>
+			<DisplayName>Current Waiting</DisplayName>
+			<ColumnName>Current_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>MaxWait</Field>
+			<DisplayName>Maximum Waiting</DisplayName>
+			<ColumnName>Max_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinWait</Field>
+			<DisplayName>Minimum Waiting</DisplayName>
+			<ColumnName>Min_Waiting</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>AveWaiting</Field>
+			<DisplayName>Average Waiting</DisplayName>
+			<ColumnName>Average_Waiting</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>AveTimeWait</Field>
+			<DisplayName>Average Time Per Wait</DisplayName>
+			<ColumnName>Average_Time_Per_Wait</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalWaiting</StatBasis>
+		</Response>
+		<Response>
+			<Field>TotalDown</Field>
+			<DisplayName>Total Down</DisplayName>
+			<ColumnName>Total_Down</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Total</StatType>
+			<StatBasis>CurrentDown</StatBasis>
+		</Response>
+		<Response>
+			<Field>CurrentDown</Field>
+			<DisplayName>Current Down</DisplayName>
+			<ColumnName>Current_Down</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Current</StatType>
+		</Response>
+		<Response>
+			<Field>MaxDown</Field>
+			<DisplayName>Maximum Down</DisplayName>
+			<ColumnName>Max_Down</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Maximum</StatType>
+		</Response>
+		<Response>
+			<Field>MinDown</Field>
+			<DisplayName>Minimum Down</DisplayName>
+			<ColumnName>Min_Down</ColumnName>
+			<DataType>integer</DataType>
+			<StatType>Minimum</StatType>
+		</Response>
+		<Response>
+			<Field>AveDown</Field>
+			<DisplayName>Average Down</DisplayName>
+			<ColumnName>Average_Down</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalDown</StatBasis>
+		</Response>
+		<Response>
+			<Field>AveDownTime</Field>
+			<DisplayName>Average Down Time</DisplayName>
+			<ColumnName>Average_Down_Time</ColumnName>
+			<DataType>Double</DataType>
+			<StatType>Discrete</StatType>
+			<StatBasis>TotalDown</StatBasis>
+		</Response>
+	</ObjectType>
+</AutoModResponses>
