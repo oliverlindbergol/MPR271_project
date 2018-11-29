@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
-// Generated:	Tue Nov 27 10:23:57 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\Base_model\tom_upperlane.dir\
+// Generated:	Thu Nov 29 17:41:15 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -89,7 +89,7 @@ Label2: ; // Step 2
 Label3: ; // Step 3
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimePolishers", P_DownTimePolishers_arriving, localactor, 7);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimePolishers", P_DownTimePolishers_arriving, localactor, 8);
 					uprsrc(&(am2_R_Polisher[ValidIndex("am_model.am_R_Polisher", this->attribute->am2_AI_index, 3)]));
 				}
 			}
@@ -141,30 +141,30 @@ P_DownTimeCutters_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 12);
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 13);
 			this->attribute->am2_AI_index = nextofFunc1(this);
 			EntityChanged(0x00000040);
 		}
 		{
-			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 13);
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 14);
 			while (1 == 1) {
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 14);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 15);
 					if (waitfor(ToModelTime(exponential(am2_stream0, 140), UNITMINUTES), this, P_DownTimeCutters_arriving, Step 2, am_localargs) == Delayed)
 						return Delayed;
 Label2: ; // Step 2
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 15);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 16);
 					downrsrc(&(am2_R_Cutter[ValidIndex("am_model.am_R_Cutter", this->attribute->am2_AI_index, 2)]));
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 16);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 17);
 					return usefor(am2_R_Maintenance, 1, this, P_DownTimeCutters_arriving, Step 3, am_localargs, ToModelTime(triangular1(am2_stream0, 12, 30, 35), UNITMINUTES));
 Label3: ; // Step 3
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 17);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeCutters", P_DownTimeCutters_arriving, localactor, 19);
 					uprsrc(&(am2_R_Cutter[ValidIndex("am_model.am_R_Cutter", this->attribute->am2_AI_index, 2)]));
 				}
 			}
@@ -196,25 +196,25 @@ P_DownTimeTurner1_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 23);
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 25);
 			while (1 == 1) {
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 24);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 26);
 					if (waitfor(ToModelTime(exponential(am2_stream0, 125), UNITMINUTES), this, P_DownTimeTurner1_arriving, Step 2, am_localargs) == Delayed)
 						return Delayed;
 Label2: ; // Step 2
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 25);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 27);
 					downrsrc(am2_R_Turner1);
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 26);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 28);
 					return usefor(am2_R_Maintenance, 1, this, P_DownTimeTurner1_arriving, Step 3, am_localargs, ToModelTime(gamma1(am2_stream0, 2, 11), UNITMINUTES));
 Label3: ; // Step 3
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 27);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner1", P_DownTimeTurner1_arriving, localactor, 30);
 					uprsrc(am2_R_Turner1);
 				}
 			}
@@ -239,6 +239,7 @@ P_DownTimeTurner2_arriving(load* this, int32 step, void* args)
 	case Step 1: goto Label1;
 	case Step 2: goto Label2;
 	case Step 3: goto Label3;
+	case Step 4: goto Label4;
 	default: message("Bad step number %ld.", step);
 	}
 	retval = Error;
@@ -246,25 +247,27 @@ P_DownTimeTurner2_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 33);
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 36);
 			while (1 == 1) {
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 34);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 37);
 					if (waitfor(ToModelTime(exponential(am2_stream0, 125), UNITMINUTES), this, P_DownTimeTurner2_arriving, Step 2, am_localargs) == Delayed)
 						return Delayed;
 Label2: ; // Step 2
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 35);
-					downrsrc(am2_R_Turner2);
-				}
-				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 36);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 39);
 					return usefor(am2_R_Maintenance, 1, this, P_DownTimeTurner2_arriving, Step 3, am_localargs, ToModelTime(gamma1(am2_stream0, 2, 11), UNITMINUTES));
 Label3: ; // Step 3
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 37);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 40);
+					if (waitfor(ToModelTime(gamma1(am2_stream0, 2, 11), UNITMINUTES), this, P_DownTimeTurner2_arriving, Step 4, am_localargs) == Delayed)
+						return Delayed;
+Label4: ; // Step 4
+				}
+				{
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeTurner2", P_DownTimeTurner2_arriving, localactor, 41);
 					uprsrc(am2_R_Turner2);
 				}
 			}
@@ -296,25 +299,25 @@ P_DownTimeGrinder1_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 43);
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 47);
 			while (1 == 1) {
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 44);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 48);
 					if (waitfor(ToModelTime(exponential(am2_stream0, 120), UNITMINUTES), this, P_DownTimeGrinder1_arriving, Step 2, am_localargs) == Delayed)
 						return Delayed;
 Label2: ; // Step 2
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 45);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 49);
 					downrsrc(am2_R_Grinder1);
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 46);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 50);
 					return usefor(am2_R_Maintenance, 1, this, P_DownTimeGrinder1_arriving, Step 3, am_localargs, ToModelTime(triangular1(am2_stream0, 12, 18, 35), UNITMINUTES));
 Label3: ; // Step 3
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 47);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder1", P_DownTimeGrinder1_arriving, localactor, 52);
 					uprsrc(am2_R_Grinder1);
 				}
 			}
@@ -346,25 +349,25 @@ P_DownTimeGrinder2_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 53);
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 58);
 			while (1 == 1) {
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 54);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 59);
 					if (waitfor(ToModelTime(exponential(am2_stream0, 120), UNITMINUTES), this, P_DownTimeGrinder2_arriving, Step 2, am_localargs) == Delayed)
 						return Delayed;
 Label2: ; // Step 2
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 55);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 60);
 					downrsrc(am2_R_Grinder2);
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 56);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 61);
 					return usefor(am2_R_Maintenance, 1, this, P_DownTimeGrinder2_arriving, Step 3, am_localargs, ToModelTime(triangular1(am2_stream0, 12, 18, 35), UNITMINUTES));
 Label3: ; // Step 3
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 57);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeGrinder2", P_DownTimeGrinder2_arriving, localactor, 63);
 					uprsrc(am2_R_Grinder2);
 				}
 			}
@@ -397,31 +400,31 @@ P_DownTimeMeasure_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 62);
+			AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 68);
 			while (1 == 1) {
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 63);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 69);
 					if (waitfor(ToModelTime(exponential(am2_stream0, 20), UNITMINUTES), this, P_DownTimeMeasure_arriving, Step 2, am_localargs) == Delayed)
 						return Delayed;
 Label2: ; // Step 2
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 64);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 70);
 					downrsrc(am2_R_Measure);
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 65);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 71);
 					return usefor(am2_R_Inspector, 1, this, P_DownTimeMeasure_arriving, Step 3, am_localargs, ToModelTime(1, UNITSECONDS));
 Label3: ; // Step 3
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 66);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 72);
 					if (waitfor(ToModelTime(2.5000000000000000, UNITMINUTES), this, P_DownTimeMeasure_arriving, Step 4, am_localargs) == Delayed)
 						return Delayed;
 Label4: ; // Step 4
 				}
 				{
-					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 67);
+					AMDebugger("downtimes.m", "Arriving procedure", "tom_upperlane.P_DownTimeMeasure", P_DownTimeMeasure_arriving, localactor, 73);
 					uprsrc(am2_R_Measure);
 				}
 			}

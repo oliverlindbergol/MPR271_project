@@ -3,7 +3,7 @@
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
 // Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
-// Generated:	Tue Nov 27 11:08:01 2018
+// Generated:	Thu Nov 29 17:36:56 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -131,6 +131,7 @@ initglobs0()
 	am_model.am_stream0 = symGetSystemDataByName(am_model.$sys, "stream0");
 	am_model.am_P_Turner1 = symGetSystemDataByName(am_model.$sys, "P_Turner1");
 	am_model.am_P_DownTimePolishers = symGetSystemDataByName(am_model.$sys, "P_DownTimePolishers");
+	am_model.am_OL_FixtureToConveyor = symGetSystemDataByName(am_model.$sys, "OL_FixtureToConveyor");
 	am_model.am_Q_Turner1 = symGetSystemDataByName(am_model.$sys, "Q_Turner1");
 	am_model.am_R_Turner1 = symGetSystemDataByName(am_model.$sys, "R_Turner1");
 	am_model.am_Q_DummySurface = symGetSystemDataByName(am_model.$sys, "Q_DummySurface");
@@ -145,6 +146,8 @@ initglobs0()
 	am_model.am_R_TnSoperator = symGetSystemDataByName(am_model.$sys, "R_TnSoperator");
 	am_model.am_stream_R_Surface_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Surface_1");
 	am_model.am_stream_R_CutOperator_1 = symGetSystemDataByName(am_model.$sys, "stream_R_CutOperator_1");
+	am_model.am_VI_PrevTurner1$var = symGetSystemDataByName(am_model.$sys, "VI_PrevTurner1");
+	am_model.am_VI_PrevTurner1$var->data = (void*)&am_model.am_VI_PrevTurner1;
 	am_model.am_C_Product40 = symGetSystemDataByName(am_model.$sys, "C_Product40");
 	am_model.am_stream_R_TnSoperator_1 = symGetSystemDataByName(am_model.$sys, "stream_R_TnSoperator_1");
 	am_model.am_Q_WareHouse = symGetSystemDataByName(am_model.$sys, "Q_WareHouse");
@@ -154,6 +157,7 @@ initglobs0()
 	am_model.am_P_WareHouse = symGetSystemDataByName(am_model.$sys, "P_WareHouse");
 	am_model.am_VI_LoadingTime$var = symGetSystemDataByName(am_model.$sys, "VI_LoadingTime");
 	am_model.am_VI_LoadingTime$var->data = (void*)&am_model.am_VI_LoadingTime;
+	am_model.am_OL_FixtureMayEnterPolisher = symGetSystemDataByName(am_model.$sys, "OL_FixtureMayEnterPolisher");
 	am_model.am_VI_CycleTimePolisher$var = symGetSystemDataByName(am_model.$sys, "VI_CycleTimePolisher");
 	am_model.am_VI_CycleTimePolisher = (int32*)xcalloc(4, sizeof(*am_model.am_VI_CycleTimePolisher));
 	am_model.am_VI_CycleTimePolisher$var->data = (void*)am_model.am_VI_CycleTimePolisher;
@@ -168,6 +172,8 @@ initglobs0()
 	am_model.am_VI_NumberofTurns2$var = symGetSystemDataByName(am_model.$sys, "VI_NumberofTurns2");
 	am_model.am_VI_NumberofTurns2$var->data = (void*)&am_model.am_VI_NumberofTurns2;
 	am_model.am_stream_R_Maintenance_1 = symGetSystemDataByName(am_model.$sys, "stream_R_Maintenance_1");
+	am_model.am_VI_PrevTurner2$var = symGetSystemDataByName(am_model.$sys, "VI_PrevTurner2");
+	am_model.am_VI_PrevTurner2$var->data = (void*)&am_model.am_VI_PrevTurner2;
 	am_model.am_OL_WaitUnloadingArea = symGetSystemDataByName(am_model.$sys, "OL_WaitUnloadingArea");
 	am_model.am_R_Grinder1 = symGetSystemDataByName(am_model.$sys, "R_Grinder1");
 	am_model.am_A_QptrPolisher$att = symGetSystemDataByName(am_model.$sys, "A_QptrPolisher");

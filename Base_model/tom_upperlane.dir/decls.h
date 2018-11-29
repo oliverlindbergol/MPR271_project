@@ -3,7 +3,7 @@
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
 // Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
-// Generated:	Tue Nov 27 11:08:01 2018
+// Generated:	Thu Nov 29 17:36:56 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -231,6 +231,7 @@ struct model_struct {
 	rnstream* am_stream0;
 	process* am_P_Turner1;
 	process* am_P_DownTimePolishers;
+	ordlist* am_OL_FixtureToConveyor;
 	queue* am_Q_Turner1;
 	resource* am_R_Turner1;
 	queue* am_Q_DummySurface;
@@ -245,6 +246,8 @@ struct model_struct {
 	resource* am_R_TnSoperator;
 	rnstream* am_stream_R_Surface_1;
 	rnstream* am_stream_R_CutOperator_1;
+	variable* am_VI_PrevTurner1$var;
+	int32 am_VI_PrevTurner1;
 	counter* am_C_Product40;
 	rnstream* am_stream_R_TnSoperator_1;
 	queue* am_Q_WareHouse;
@@ -254,6 +257,7 @@ struct model_struct {
 	process* am_P_WareHouse;
 	variable* am_VI_LoadingTime$var;
 	int32 am_VI_LoadingTime;
+	ordlist* am_OL_FixtureMayEnterPolisher;
 	variable* am_VI_CycleTimePolisher$var;
 	int32 *am_VI_CycleTimePolisher;
 	process* am_P_Grinder2;
@@ -267,6 +271,8 @@ struct model_struct {
 	variable* am_VI_NumberofTurns2$var;
 	int32 am_VI_NumberofTurns2;
 	rnstream* am_stream_R_Maintenance_1;
+	variable* am_VI_PrevTurner2$var;
+	int32 am_VI_PrevTurner2;
 	ordlist* am_OL_WaitUnloadingArea;
 	resource* am_R_Grinder1;
 	attribute* am_A_QptrPolisher$att;

@@ -459,7 +459,17 @@ end
 
 QUEUE name Q_FixtureInPolisher 0 cap 1
 
-	UserDef
+	dis 0 Stacking PLUSZ
+		picpos begx -36 begy 8 endx -35 endy 8
+
+	UserDef	template Feet
+700 17
+2 2 0 1 1 none
+1
+310 17
+2 2 0 1 0 none
+4 4 4 4 4 0 0
+end
 
 QUEUE name Q_FixtureUnloading 0 cap 1
 
@@ -704,6 +714,8 @@ ORDER name OL_WaitForBatch 0
 ORDER name OL_WaitBatchSurface 0
 ORDER name OL_WaitBatchUnloading 0
 ORDER name OL_WaitUnloadingArea 0
+ORDER name OL_FixtureMayEnterPolisher 0
+ORDER name OL_FixtureToConveyor 0
 COUNT name C_Product40 0 cap Infinite
 COUNT name C_Product46 0 cap Infinite
 COUNT name C_Product49 0 cap Infinite
@@ -729,6 +741,8 @@ VAR name VI_NumberofTurns2 0 type Integer
 VAR name VI_BatchSize 0 type Integer
 VAR name VI_NumberCycles 0 type Integer
 VAR name VI_PrevMeasure 0 type Integer
+VAR name VI_PrevTurner1 0 type Integer
+VAR name VI_PrevTurner2 0 type Integer
 RNSTREAM stream0 0 type CMRG flags 1
 	cmrgseed 1 12345 12345 12345 12345 12345 12345
 RNSTREAM stream_R_CutOperator_1 0 type CMRG flags 1
@@ -837,11 +851,11 @@ begin P_Turner1 arriving procedure
 	if this load type = L_Product49 then	
 		set AI_ProdType = 3
 
-	if AI_ProdType != VI_PrevTurner then begin
+	if AI_ProdType != VI_PrevTurner1 then begin
 		get R_TnSoperator
 		use R_Turner1 for triangular 10, 12, 20 sec
 		free R_TnSoperator
-		set VI_PrevTurner = AI_ProdType
+		set VI_PrevTurner1 = AI_ProdType
 	end
 	
 	if VI_NumberofTurns1 >= VI_MAXbefortoolchange then begin
@@ -870,11 +884,11 @@ begin P_Turner2 arriving procedure
 	if this load type == L_Product49 then	
 		set AI_ProdType = 49
 
-	if AI_ProdType != VI_PrevTurner then  begin
+	if AI_ProdType != VI_PrevTurner2 then  begin
 		get R_TnSoperator
 		use R_Turner2 for triangular 10, 12, 20 sec
 		free R_TnSoperator
-		set VI_PrevTurner = AI_ProdType
+		set VI_PrevTurner2 = AI_ProdType
 	end
 	
 	if VI_NumberofTurns2 >= VI_MAXbefortoolchange then begin
@@ -952,15 +966,15 @@ SFileBegin	name polisher.m
 begin P_Loading arriving procedure
     while 1=1 begin
         move into Q_Fixture
-        if Q_LoadingProduct current = 1 then
+        if Q_LoadingProduct current >0 then
         	order 1 load from OL_FixtureAvailable to continue
         wait to be ordered on OL_FixtureLoad
         move into Q_LoadingFixture
-        wait for VI_LoadingTime sec
+        wait to be ordered on OL_FixtureMayEnterPolisher
         move into Q_FixtureInPolisher
         wait to be ordered on OL_FixtureUnload
        	move into Q_FixtureUnloading
-        wait for VI_LoadingTime sec
+        wait to be ordered on OL_FixtureToConveyor
         move into Q_Conveyor
         wait for VI_FixtureTravelTime min
     end
@@ -1006,14 +1020,17 @@ begin P_Polisher arriving procedure
     	
     order 1 load from OL_FixtureLoad to continue
     wait for VI_LoadingTime sec
+    
     move into Q_Polisher(AI_PolisherIndex)
+    order 1 load from OL_FixtureMayEnterPolisher to continue
     
     order 1 load from OL_ProductLoad to continue
     
     use R_Polisher(AI_PolisherIndex) for VI_CycleTimePolisher(AI_PolisherIndex) sec
-    order 1 load from OL_FixtureUnload to continue
 	move into Q_Unloading
+	order 1 load from OL_FixtureUnload to continue
     wait for VI_LoadingTime sec
+    order 1 load from OL_FixtureToConveyor to continue
 
     move into Q_Buffer3    
     send to P_SurfaceTreatment
@@ -1060,14 +1077,16 @@ begin P_Init arriving procedure
     set Q_Buffer49 capacity = 8
     set Q_Fixture capacity = 3
     set Q_Conveyor capacity = 3
-    set Q_FixtureInPolisher capacity = 3
-    set Q_UnloadingArea capacity = 7
-    set Q_DummyUnloadingArea capacity = VI_BatchSize-1
+    set Q_LoadingFixture capacity = 1
+    set Q_LoadingProduct capacity = 1
+	set Q_FixtureInPolisher capacity = 3
+    set Q_Unloading capacity = 1
+    set Q_FixtureUnloading capacity = 1
     set Q_DummySurface capacity = VI_BatchSize-1
+    set Q_UnloadingArea capacity = 1
+    set Q_DummyUnloadingArea capacity = VI_BatchSize-1
     set Q_Cooling capacity = 9
 
-
-   
 
 	set VI_Numberofcuts(1) = 9 // type 4.0
 	set VI_Numberofcuts(2) = 8 // type 4.6
@@ -1095,19 +1114,7 @@ begin P_WareHouse arriving procedure
    		 wait to be ordered on OL_WaitForCutter
     send to P_Cutter
 end
-/*-------------FAKE CUTTER-----------*/
-/*begin P_Cutter arriving procedure
-    move into Q_Cutter
-    create 1 load of type L_Product40 to P_Polisher
-    create 1 load of type L_Product46 to P_Polisher
-    create 1 load of type L_Product49 to P_Polisher
-    order 1 load from OL_WaitForCutter to continue
-    send to die
-end
 
-/*-------------FAKE CUTTER-----------*/
-
-*/
 
 #@!
 SFileBegin	name downtimes.m
@@ -1117,6 +1124,7 @@ begin P_DownTimePolishers arriving procedure
         wait for exponential 90 min /* MTTF */
         take down R_Polisher(AI_index)
         use R_Maintenance for gamma 2,6 min /* MTTR */ 
+        //wait for gamma 2,6 min
         bring up R_Polisher(AI_index)
     end
 end
@@ -1127,6 +1135,7 @@ begin P_DownTimeCutters arriving procedure
 		wait for exponential 140 min /* MTTF */
 		take down R_Cutter(AI_index)
 		use R_Maintenance for triangular 12, 30, 35 min /* MTTR */ 
+		//wait for triangular 12, 30, 35 min
 		bring up R_Cutter(AI_index)
 	end
 end	
@@ -1137,6 +1146,7 @@ begin P_DownTimeTurner1 arriving procedure
 		wait for exponential 125 min /* MTTF */
 		take down R_Turner1
 		use R_Maintenance for gamma 2,11 min /* MTTR */ 
+		//wait for gamma 2,11 min
 		bring up R_Turner1
 	end
 end	
@@ -1145,8 +1155,9 @@ begin P_DownTimeTurner2 arriving procedure
 
 	while 1=1 do begin
 		wait for exponential 125 min /* MTTF */
-		take down R_Turner2
-		use R_Maintenance for gamma 2,11 min /* MTTR */ 
+		//take down R_Turner2
+		use R_Maintenance for gamma 2,11 min /* MTTR */
+		wait for gamma 2,11 min 
 		bring up R_Turner2
 	end
 end
@@ -1157,6 +1168,7 @@ begin P_DownTimeGrinder1 arriving procedure
 		wait for exponential 120 min /* MTTF */
 		take down R_Grinder1
 		use R_Maintenance for triangular 12, 18, 35 min /* MTTR */ 
+		//wait for triangular 12, 18, 35 min
 		bring up R_Grinder1
 	end
 end
@@ -1167,6 +1179,7 @@ begin P_DownTimeGrinder2 arriving procedure
 		wait for exponential 120 min /* MTTF */
 		take down R_Grinder2
 		use R_Maintenance for triangular 12, 18, 35 min/* MTTR */ 
+		//wait for triangular 12, 18, 35 min
 		bring up R_Grinder2
 	end
 end
@@ -1204,8 +1217,9 @@ begin P_SurfaceTreatment arriving procedure
         end
 
     use R_Surface for 700 sec
+    inc VI_NumberCycles by 1
 
-    if Q_UnloadingArea current > 0 then
+    if Q_DummyUnloadingArea current > 0 then
         wait to be ordered on OL_WaitUnloadingArea
 
     order VI_BatchSize - 1 loads from OL_WaitBatchSurface to continue

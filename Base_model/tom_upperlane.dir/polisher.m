@@ -1,15 +1,15 @@
 begin P_Loading arriving procedure
     while 1=1 begin
         move into Q_Fixture
-        if Q_LoadingProduct current = 1 then
+        if Q_LoadingProduct current >0 then
         	order 1 load from OL_FixtureAvailable to continue
         wait to be ordered on OL_FixtureLoad
         move into Q_LoadingFixture
-        wait for VI_LoadingTime sec
+        wait to be ordered on OL_FixtureMayEnterPolisher
         move into Q_FixtureInPolisher
         wait to be ordered on OL_FixtureUnload
        	move into Q_FixtureUnloading
-        wait for VI_LoadingTime sec
+        wait to be ordered on OL_FixtureToConveyor
         move into Q_Conveyor
         wait for VI_FixtureTravelTime min
     end
@@ -55,14 +55,17 @@ begin P_Polisher arriving procedure
     	
     order 1 load from OL_FixtureLoad to continue
     wait for VI_LoadingTime sec
+    
     move into Q_Polisher(AI_PolisherIndex)
+    order 1 load from OL_FixtureMayEnterPolisher to continue
     
     order 1 load from OL_ProductLoad to continue
     
     use R_Polisher(AI_PolisherIndex) for VI_CycleTimePolisher(AI_PolisherIndex) sec
-    order 1 load from OL_FixtureUnload to continue
 	move into Q_Unloading
+	order 1 load from OL_FixtureUnload to continue
     wait for VI_LoadingTime sec
+    order 1 load from OL_FixtureToConveyor to continue
 
     move into Q_Buffer3    
     send to P_SurfaceTreatment

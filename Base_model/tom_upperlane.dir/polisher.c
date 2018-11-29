@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
-// Generated:	Tue Nov 27 10:23:57 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\Base_model\tom_upperlane.dir\
+// Generated:	Thu Nov 29 17:41:15 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -64,7 +64,7 @@ Label2: ; // Step 2
 				}
 				{
 					AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Loading", P_Loading_arriving, localactor, 4);
-					if (QueGetCurConts(am2_Q_LoadingProduct) == 1) {
+					if (QueGetCurConts(am2_Q_LoadingProduct) > 0) {
 						AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Loading", P_Loading_arriving, localactor, 5);
 						order(1, am2_OL_FixtureAvailable, NULL, NULL);		// Place an order
 					}
@@ -87,9 +87,12 @@ Label4: ; // Step 4
 				}
 				{
 					AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Loading", P_Loading_arriving, localactor, 8);
-					if (waitfor(ToModelTime(am2_VI_LoadingTime, UNITSECONDS), this, P_Loading_arriving, Step 5, am_localargs) == Delayed)
-						return Delayed;
+					return waitorder(am2_OL_FixtureMayEnterPolisher, this, P_Loading_arriving, Step 5, am_localargs);
 Label5: ; // Step 5
+					if (!this->inLeaveProc && this->nextproc) {
+						retval = Continue;
+						goto LabelRet;
+					}
 				}
 				{
 					AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Loading", P_Loading_arriving, localactor, 9);
@@ -116,9 +119,12 @@ Label8: ; // Step 8
 				}
 				{
 					AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Loading", P_Loading_arriving, localactor, 12);
-					if (waitfor(ToModelTime(am2_VI_LoadingTime, UNITSECONDS), this, P_Loading_arriving, Step 9, am_localargs) == Delayed)
-						return Delayed;
+					return waitorder(am2_OL_FixtureToConveyor, this, P_Loading_arriving, Step 9, am_localargs);
 Label9: ; // Step 9
+					if (!this->inLeaveProc && this->nextproc) {
+						retval = Continue;
+						goto LabelRet;
+					}
 				}
 				{
 					AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Loading", P_Loading_arriving, localactor, 13);
@@ -322,7 +328,7 @@ Label7: ; // Step 7
 Label8: ; // Step 8
 		}
 		{
-			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 58);
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 59);
 			pushppa(this, P_Polisher_arriving, Step 9, am_localargs);
 			pushppa(this, inqueue, Step 1, &(am2_Q_Polisher[ValidIndex("am_model.am_Q_Polisher", this->attribute->am2_AI_PolisherIndex, 3)]));
 			return Continue; // go move into territory
@@ -330,39 +336,47 @@ Label9: ; // Step 9
 		}
 		{
 			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 60);
-			order(1, am2_OL_ProductLoad, NULL, NULL);		// Place an order
+			order(1, am2_OL_FixtureMayEnterPolisher, NULL, NULL);		// Place an order
 		}
 		{
 			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 62);
+			order(1, am2_OL_ProductLoad, NULL, NULL);		// Place an order
+		}
+		{
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 64);
 			return usefor(&(am2_R_Polisher[ValidIndex("am_model.am_R_Polisher", this->attribute->am2_AI_PolisherIndex, 3)]), 1, this, P_Polisher_arriving, Step 10, am_localargs, ToModelTime(am2_VI_CycleTimePolisher[ValidIndex("am_model.am_VI_CycleTimePolisher", this->attribute->am2_AI_PolisherIndex, 3)], UNITSECONDS));
 Label10: ; // Step 10
 		}
 		{
-			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 63);
-			order(1, am2_OL_FixtureUnload, NULL, NULL);		// Place an order
-		}
-		{
-			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 64);
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 65);
 			pushppa(this, P_Polisher_arriving, Step 11, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_Unloading);
 			return Continue; // go move into territory
 Label11: ; // Step 11
 		}
 		{
-			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 65);
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 66);
+			order(1, am2_OL_FixtureUnload, NULL, NULL);		// Place an order
+		}
+		{
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 67);
 			if (waitfor(ToModelTime(am2_VI_LoadingTime, UNITSECONDS), this, P_Polisher_arriving, Step 12, am_localargs) == Delayed)
 				return Delayed;
 Label12: ; // Step 12
 		}
 		{
-			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 67);
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 68);
+			order(1, am2_OL_FixtureToConveyor, NULL, NULL);		// Place an order
+		}
+		{
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 70);
 			pushppa(this, P_Polisher_arriving, Step 13, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_Buffer3);
 			return Continue; // go move into territory
 Label13: ; // Step 13
 		}
 		{
-			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 68);
+			AMDebugger("polisher.m", "Arriving procedure", "tom_upperlane.P_Polisher", P_Polisher_arriving, localactor, 71);
 			this->nextproc = am2_P_SurfaceTreatment; /* send to ... */
 			EntityChanged(W_LOAD);
 			retval = Continue;

@@ -63,11 +63,11 @@ begin P_Turner1 arriving procedure
 	if this load type = L_Product49 then	
 		set AI_ProdType = 3
 
-	if AI_ProdType != VI_PrevTurner then begin
+	if AI_ProdType != VI_PrevTurner1 then begin
 		get R_TnSoperator
 		use R_Turner1 for triangular 10, 12, 20 sec
 		free R_TnSoperator
-		set VI_PrevTurner = AI_ProdType
+		set VI_PrevTurner1 = AI_ProdType
 	end
 	
 	if VI_NumberofTurns1 >= VI_MAXbefortoolchange then begin
@@ -96,11 +96,11 @@ begin P_Turner2 arriving procedure
 	if this load type == L_Product49 then	
 		set AI_ProdType = 49
 
-	if AI_ProdType != VI_PrevTurner then  begin
+	if AI_ProdType != VI_PrevTurner2 then  begin
 		get R_TnSoperator
 		use R_Turner2 for triangular 10, 12, 20 sec
 		free R_TnSoperator
-		set VI_PrevTurner = AI_ProdType
+		set VI_PrevTurner2 = AI_ProdType
 	end
 	
 	if VI_NumberofTurns2 >= VI_MAXbefortoolchange then begin

@@ -36,14 +36,16 @@ begin P_Init arriving procedure
     set Q_Buffer49 capacity = 8
     set Q_Fixture capacity = 3
     set Q_Conveyor capacity = 3
-    set Q_FixtureInPolisher capacity = 3
-    set Q_UnloadingArea capacity = 7
-    set Q_DummyUnloadingArea capacity = VI_BatchSize-1
+    set Q_LoadingFixture capacity = 1
+    set Q_LoadingProduct capacity = 1
+	set Q_FixtureInPolisher capacity = 3
+    set Q_Unloading capacity = 1
+    set Q_FixtureUnloading capacity = 1
     set Q_DummySurface capacity = VI_BatchSize-1
+    set Q_UnloadingArea capacity = 1
+    set Q_DummyUnloadingArea capacity = VI_BatchSize-1
     set Q_Cooling capacity = 9
 
-
-   
 
 	set VI_Numberofcuts(1) = 9 // type 4.0
 	set VI_Numberofcuts(2) = 8 // type 4.6
@@ -71,17 +73,5 @@ begin P_WareHouse arriving procedure
    		 wait to be ordered on OL_WaitForCutter
     send to P_Cutter
 end
-/*-------------FAKE CUTTER-----------*/
-/*begin P_Cutter arriving procedure
-    move into Q_Cutter
-    create 1 load of type L_Product40 to P_Polisher
-    create 1 load of type L_Product46 to P_Polisher
-    create 1 load of type L_Product49 to P_Polisher
-    order 1 load from OL_WaitForCutter to continue
-    send to die
-end
 
-/*-------------FAKE CUTTER-----------*/
-
-*/
 

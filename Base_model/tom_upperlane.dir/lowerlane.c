@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
-// Generated:	Tue Nov 27 11:07:52 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\Base_model\tom_upperlane.dir\
+// Generated:	Thu Nov 29 17:41:15 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -139,9 +139,14 @@ Label8: ; // Step 8
 Label9: ; // Step 9
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 23);
-			if (QueGetCurConts(am2_Q_UnloadingArea) > 0) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 24);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 22);
+			am2_VI_NumberCycles += 1;
+			EntityChanged(0x01000000);
+		}
+		{
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 24);
+			if (QueGetCurConts(am2_Q_DummyUnloadingArea) > 0) {
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 25);
 				return waitorder(am2_OL_WaitUnloadingArea, this, P_SurfaceTreatment_arriving, Step 10, am_localargs);
 Label10: ; // Step 10
 				if (!this->inLeaveProc && this->nextproc) {
@@ -151,27 +156,27 @@ Label10: ; // Step 10
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 26);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 27);
 			order(am2_VI_BatchSize - 1, am2_OL_WaitBatchSurface, NULL, NULL);		// Place an order
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 27);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 28);
 			pushppa(this, P_SurfaceTreatment_arriving, Step 11, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_UnloadingArea);
 			return Continue; // go move into territory
 Label11: ; // Step 11
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 29);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 30);
 			return usefor(am2_R_TnSoperator, 1, this, P_SurfaceTreatment_arriving, Step 12, am_localargs, ToModelTime(5, UNITSECONDS));
 Label12: ; // Step 12
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 30);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 31);
 			order(am2_VI_BatchSize - 1, am2_OL_WaitBatchUnloading, NULL, NULL);		// Place an order
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 31);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceTreatment", P_SurfaceTreatment_arriving, localactor, 32);
 			this->nextproc = am2_P_Cooling; /* send to ... */
 			EntityChanged(W_LOAD);
 			retval = Continue;
@@ -204,27 +209,27 @@ P_Cooling_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 35);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 36);
 			pushppa(this, P_Cooling_arriving, Step 2, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_Cooling);
 			return Continue; // go move into territory
 Label2: ; // Step 2
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 36);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 37);
 			if (QueGetCurConts(am2_Q_UnloadingArea) == 0 && QueGetCurConts(am2_Q_DummyUnloadingArea) == 0) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 37);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 38);
 				order(1, am2_OL_WaitUnloadingArea, NULL, NULL);		// Place an order
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 39);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 40);
 			if (waitfor(ToModelTime(uniform1(am2_stream0, 10, 1), UNITMINUTES), this, P_Cooling_arriving, Step 3, am_localargs) == Delayed)
 				return Delayed;
 Label3: ; // Step 3
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 40);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Cooling", P_Cooling_arriving, localactor, 41);
 			this->nextproc = am2_P_Measure; /* send to ... */
 			EntityChanged(W_LOAD);
 			retval = Continue;
@@ -259,63 +264,63 @@ P_Measure_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 44);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 45);
 			pushppa(this, P_Measure_arriving, Step 2, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_Measure);
 			return Continue; // go move into territory
 Label2: ; // Step 2
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 45);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 46);
 			if (waitfor(ToModelTime(80, UNITSECONDS), this, P_Measure_arriving, Step 3, am_localargs) == Delayed)
 				return Delayed;
 Label3: ; // Step 3
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 46);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 47);
 			if (LdGetType(this) == am2_L_Product40) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 47);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 48);
 				this->attribute->am2_AI_ProdType = 1;
 				EntityChanged(0x00000040);
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 48);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 49);
 			if (LdGetType(this) == am2_L_Product46) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 49);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 50);
 				this->attribute->am2_AI_ProdType = 2;
 				EntityChanged(0x00000040);
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 50);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 51);
 			if (LdGetType(this) == am2_L_Product49) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 51);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 52);
 				this->attribute->am2_AI_ProdType = 3;
 				EntityChanged(0x00000040);
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 53);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 54);
 			if (this->attribute->am2_AI_ProdType != am2_VI_PrevMeasure) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 54);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 55);
 				if (waitfor(ToModelTime(uniform1(am2_stream0, 72.500000000000000, 12.500000000000000), UNITSECONDS), this, P_Measure_arriving, Step 4, am_localargs) == Delayed)
 					return Delayed;
 Label4: ; // Step 4
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 56);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 57);
 			am2_VI_PrevMeasure = this->attribute->am2_AI_ProdType;
 			EntityChanged(0x01000000);
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 58);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 59);
 			return usefor(am2_R_Measure, 1, this, P_Measure_arriving, Step 5, am_localargs, ToModelTime(295, UNITSECONDS));
 Label5: ; // Step 5
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 60);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Measure", P_Measure_arriving, localactor, 61);
 			this->nextproc = am2_P_SurfaceInspection; /* send to ... */
 			EntityChanged(W_LOAD);
 			retval = Continue;
@@ -374,26 +379,26 @@ P_SurfaceInspection_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 64);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 65);
 			pushppa(this, P_SurfaceInspection_arriving, Step 2, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_SurfaceInspection);
 			return Continue; // go move into territory
 Label2: ; // Step 2
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 65);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 66);
 			return usefor(am2_R_Inspector, 1, this, P_SurfaceInspection_arriving, Step 3, am_localargs, ToModelTime(uniform1(am2_stream0, 4.2500000000000000, 0.75000000000000000), UNITMINUTES));
 Label3: ; // Step 3
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 66);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 67);
 			this->attribute->am2_AI_InspectionResult = oneofFunc0(this);
 			EntityChanged(0x00000040);
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 67);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 68);
 			if (this->attribute->am2_AI_InspectionResult == 0) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 68);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 69);
 				this->nextproc = am2_die; /* send to ... */
 				EntityChanged(W_LOAD);
 				retval = Continue;
@@ -401,7 +406,7 @@ Label3: ; // Step 3
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 69);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_SurfaceInspection", P_SurfaceInspection_arriving, localactor, 70);
 			this->nextproc = am2_P_Packaging; /* send to ... */
 			EntityChanged(W_LOAD);
 			retval = Continue;
@@ -436,16 +441,16 @@ P_Packaging_arriving(load* this, int32 step, void* args)
 Label1: ;  /* Step1 */
 	{
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 73);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 74);
 			pushppa(this, P_Packaging_arriving, Step 2, am_localargs);
 			pushppa(this, inqueue, Step 1, am2_Q_Packaging);
 			return Continue; // go move into territory
 Label2: ; // Step 2
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 74);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 75);
 			if (LdGetType(this) == am2_L_Product40) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 75);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 76);
 				{
 					int result = inccount(am2_C_Product40, 1, this, P_Packaging_arriving, Step 3, am_localargs);
 					if (result != Continue) return result;
@@ -454,9 +459,9 @@ Label3: ;	// Step 3
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 76);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 77);
 			if (LdGetType(this) == am2_L_Product46) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 77);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 78);
 				{
 					int result = inccount(am2_C_Product46, 1, this, P_Packaging_arriving, Step 4, am_localargs);
 					if (result != Continue) return result;
@@ -465,9 +470,9 @@ Label4: ;	// Step 4
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 78);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 79);
 			if (LdGetType(this) == am2_L_Product49) {
-				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 79);
+				AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 80);
 				{
 					int result = inccount(am2_C_Product49, 1, this, P_Packaging_arriving, Step 5, am_localargs);
 					if (result != Continue) return result;
@@ -476,7 +481,7 @@ Label5: ;	// Step 5
 			}
 		}
 		{
-			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 80);
+			AMDebugger("lowerlane.m", "Arriving procedure", "tom_upperlane.P_Packaging", P_Packaging_arriving, localactor, 81);
 			this->nextproc = am2_die; /* send to ... */
 			EntityChanged(W_LOAD);
 			retval = Continue;

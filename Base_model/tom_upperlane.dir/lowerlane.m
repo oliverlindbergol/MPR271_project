@@ -19,8 +19,9 @@ begin P_SurfaceTreatment arriving procedure
         end
 
     use R_Surface for 700 sec
+    inc VI_NumberCycles by 1
 
-    if Q_UnloadingArea current > 0 then
+    if Q_DummyUnloadingArea current > 0 then
         wait to be ordered on OL_WaitUnloadingArea
 
     order VI_BatchSize - 1 loads from OL_WaitBatchSurface to continue

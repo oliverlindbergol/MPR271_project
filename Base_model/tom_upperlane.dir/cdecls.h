@@ -3,7 +3,7 @@
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
 // Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
-// Generated:	Tue Nov 27 11:08:01 2018
+// Generated:	Thu Nov 29 17:36:56 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -316,6 +316,8 @@
 #undef am2_P_DownTimePolishers
 #define am2_P_DownTimePolishers am_model.am_P_DownTimePolishers
 #undef SetAcceptBlocking
+#undef am2_OL_FixtureToConveyor
+#define am2_OL_FixtureToConveyor am_model.am_OL_FixtureToConveyor
 #undef am2_Q_Turner1
 #define am2_Q_Turner1 am_model.am_Q_Turner1
 #undef am2_R_Turner1
@@ -359,6 +361,8 @@
 #define am2_stream_R_CutOperator_1 am_model.am_stream_R_CutOperator_1
 #undef OPCRefreshSubscription
 #undef OPCWriteReal
+#undef am2_VI_PrevTurner1
+#define am2_VI_PrevTurner1 am_model.am_VI_PrevTurner1
 #undef MMSyncSendMessageModel
 #undef am2_C_Product40
 #define am2_C_Product40 am_model.am_C_Product40
@@ -387,6 +391,8 @@
 #undef MMSyncSendMessageNumStrings
 #undef am2_VI_LoadingTime
 #define am2_VI_LoadingTime am_model.am_VI_LoadingTime
+#undef am2_OL_FixtureMayEnterPolisher
+#define am2_OL_FixtureMayEnterPolisher am_model.am_OL_FixtureMayEnterPolisher
 #undef Fdelpic
 #undef DistVeh2Loc
 #undef Fgetsysdate
@@ -414,6 +420,8 @@
 #define am2_VI_NumberofTurns2 am_model.am_VI_NumberofTurns2
 #undef am2_stream_R_Maintenance_1
 #define am2_stream_R_Maintenance_1 am_model.am_stream_R_Maintenance_1
+#undef am2_VI_PrevTurner2
+#define am2_VI_PrevTurner2 am_model.am_VI_PrevTurner2
 #undef am2_OL_WaitUnloadingArea
 #define am2_OL_WaitUnloadingArea am_model.am_OL_WaitUnloadingArea
 #undef am2_R_Grinder1

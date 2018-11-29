@@ -2,8 +2,8 @@
 // AutoMod 12.6.1 Generated File
 // Build: 12.6.1.19
 // Model name:	tom_upperlane
-// Model path:	D:\Oliver\MPSYS\SOPS\Project\test\tom_upperlane.dir\
-// Generated:	Tue Nov 27 11:17:53 2018
+// Model path:	D:\Oliver\MPSYS\SOPS\Project\Base_model\tom_upperlane.dir\
+// Generated:	Thu Nov 29 17:41:15 2018
 // Applied/AutoMod Licensee Confidential
 // NO DISTRIBUTION OR REPRODUCTION RIGHTS GRANTED!
 // Copyright (c) 1988-2016 Applied Materials All rights reserved.
@@ -282,7 +282,7 @@ Label3: ; // Step 3
 		}
 		{
 			AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner1", P_Turner1_arriving, localactor, 66);
-			if (this->attribute->am2_AI_ProdType != am2_VI_PrevTurner) {
+			if (this->attribute->am2_AI_ProdType != am2_VI_PrevTurner1) {
 				{
 					AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner1", P_Turner1_arriving, localactor, 67);
 					if (getrsrc(am2_R_TnSoperator, 1, this, P_Turner1_arriving, Step 4, am_localargs) == Delayed)
@@ -300,7 +300,7 @@ Label5: ; // Step 5
 				}
 				{
 					AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner1", P_Turner1_arriving, localactor, 70);
-					am2_VI_PrevTurner = this->attribute->am2_AI_ProdType;
+					am2_VI_PrevTurner1 = this->attribute->am2_AI_ProdType;
 					EntityChanged(0x01000000);
 				}
 			}
@@ -410,7 +410,7 @@ Label2: ; // Step 2
 		}
 		{
 			AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner2", P_Turner2_arriving, localactor, 99);
-			if (this->attribute->am2_AI_ProdType != am2_VI_PrevTurner) {
+			if (this->attribute->am2_AI_ProdType != am2_VI_PrevTurner2) {
 				{
 					AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner2", P_Turner2_arriving, localactor, 100);
 					if (getrsrc(am2_R_TnSoperator, 1, this, P_Turner2_arriving, Step 3, am_localargs) == Delayed)
@@ -428,7 +428,7 @@ Label4: ; // Step 4
 				}
 				{
 					AMDebugger("upperlanelogic.m", "Arriving procedure", "tom_upperlane.P_Turner2", P_Turner2_arriving, localactor, 103);
-					am2_VI_PrevTurner = this->attribute->am2_AI_ProdType;
+					am2_VI_PrevTurner2 = this->attribute->am2_AI_ProdType;
 					EntityChanged(0x01000000);
 				}
 			}
