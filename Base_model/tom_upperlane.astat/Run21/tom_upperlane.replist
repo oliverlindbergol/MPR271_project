@@ -1,7 +1,0 @@
-MODEL_SYSTEM_REP	tom_upperlane.Model.rep
-MODEL_PROCESS_REP	tom_upperlane.Process.rep
-MODEL_QUEUE_REP	tom_upperlane.Queue.rep
-MODEL_COUNTER_REP	tom_upperlane.Counter.rep
-MODEL_ORDERLIST_REP	tom_upperlane.OrderList.rep
-MODEL_RESOURCE_REP	tom_upperlane.Resource.rep
-MODEL_STREAM_REP	tom_upperlane.Stream.rep

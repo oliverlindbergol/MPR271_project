@@ -1,5 +1,0 @@
-Name	Total_Claim_Count	Current_Claim_Count	Average_Claim_Count	Capacity	Max_Claims	Min_Claims	Utilization	Average_Time_Per_Claim	Average_Wait_Time	Total_Waiting	Current_Waiting	Max_Waiting	Min_Waiting	Average_Waiting	Average_Time_Per_Wait	
-@66:16:00:00.00
-C_Product40	543	543	247.529221	Infinite	543	0		2625724.329858		0	0	0	0	0.000000	0.000000	
-C_Product46	992	992	503.576484	Infinite	992	0		2923992.488625		0	0	0	0	0.000000	0.000000	
-C_Product49	857	857	410.282214	Infinite	857	0		2757556.068934		0	0	0	0	0.000000	0.000000	
