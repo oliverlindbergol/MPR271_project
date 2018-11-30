@@ -1,0 +1,29 @@
+Name	Total_Usage	Current_Usage	Average_Usage	Maximum_Usage	Minimum_Usage	Average_Time_Usage	Total_Backorders_Filled	Total_Backordered	Current_Backordered	Average_Backordered	Maximum_Backordered	Minimum_Backordered	
+@1:00:00:00.00
+OL_WaitForCutter	38	33	15.035963	33	0	34187.031974	0(null)0	0	0.000000	0	0	
+OL_CutterWait	28	1	1.215732	2	0	3751.401359	0(null)0	0	0.000000	0	0	
+OL_Turner1Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_Turner2Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_Grinder1Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_FixtureAvailable	8	0	0.048362	1	0	522.307374	0(null)0	0	0.000000	0	0	
+OL_FixtureLoad	35	1	1.778314	3	0	4389.895786	0(null)0	0	0.000000	0	0	
+OL_FixtureUnload	34	2	0.988352	3	0	2511.577867	0(null)0	0	0.000000	0	0	
+OL_ProductLoad	13	0	0.316756	3	0	2105.207530	0(null)0	0	0.000000	0	0	
+OL_WaitForBatch	28	4	2.406778	6	0	7426.630376	0(null)0	0	0.000000	0	0	
+OL_WaitBatchSurface	24	0	0.194444	6	0	700.000000	0(null)0	0	0.000000	0	0	
+OL_WaitBatchUnloading	24	0	0.391093	6	0	1407.936375	0(null)0	0	0.000000	0	0	
+OL_WaitUnloadingArea	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+@67:16:00:00.00
+OL_WaitForCutter	417	50	49.863106	50	32	688756.577595	0(null)0	0	0.000000	0	0	
+OL_CutterWait	2295	2	1.511330	2	0	3793.142749	0(null)0	0	0.000000	0	0	
+OL_Turner1Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_Turner2Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_Grinder1Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_FixtureAvailable	693	0	0.050644	1	0	420.934513	0(null)0	0	0.000000	0	0	
+OL_FixtureLoad	2506	3	1.676858	3	0	3854.230147	0(null)0	0	0.000000	0	0	
+OL_FixtureUnload	2505	0	1.052579	3	0	2420.301738	0(null)0	0	0.000000	0	0	
+OL_ProductLoad	1055	0	0.647782	10	0	3536.704002	0(null)0	0	0.000000	0	0	
+OL_WaitForBatch	2151	3	3.101083	6	0	8304.156365	0(null)0	0	0.000000	0	0	
+OL_WaitBatchSurface	2148	0	0.264791	6	0	710.054511	0(null)0	0	0.000000	0	0	
+OL_WaitBatchUnloading	2148	0	0.419995	6	0	1126.243269	0(null)0	0	0.000000	0	0	
+OL_WaitUnloadingArea	2	0	0.000625	1	0	1799.757558	0(null)0	0	0.000000	0	0	

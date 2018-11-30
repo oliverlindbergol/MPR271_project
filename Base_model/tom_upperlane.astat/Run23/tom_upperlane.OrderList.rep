@@ -1,0 +1,15 @@
+Name	Total_Usage	Current_Usage	Average_Usage	Maximum_Usage	Minimum_Usage	Average_Time_Usage	Total_Backorders_Filled	Total_Backordered	Current_Backordered	Average_Backordered	Maximum_Backordered	Minimum_Backordered	
+@66:16:00:00.00
+OL_WaitForCutter	419	50	49.243130	50	0	676946.135594	0(null)0	0	0.000000	0	0	
+OL_CutterWait	2359	1	1.523474	2	0	3719.884792	0(null)0	0	0.000000	0	0	
+OL_Turner1Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_Turner2Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_Grinder1Wait	0	0	0.000000	0	0	0.000000	0(null)0	0	0.000000	0	0	
+OL_FixtureAvailable	680	0	0.051589	1	0	436.987074	0(null)0	0	0.000000	0	0	
+OL_FixtureLoad	2536	0	1.664400	3	0	3780.341230	0(null)0	0	0.000000	0	0	
+OL_FixtureUnload	2536	3	1.061790	3	0	2411.637530	0(null)0	0	0.000000	0	0	
+OL_ProductLoad	1086	0	0.807148	13	0	4281.008464	0(null)0	0	0.000000	0	0	
+OL_WaitForBatch	2172	6	3.002521	6	0	7962.487501	0(null)0	0	0.000000	0	0	
+OL_WaitBatchSurface	2166	0	0.264957	6	0	704.595358	0(null)0	0	0.000000	0	0	
+OL_WaitBatchUnloading	2166	0	0.452603	6	0	1203.596695	0(null)0	0	0.000000	0	0	
+OL_WaitUnloadingArea	2	0	0.000288	1	0	829.462077	0(null)0	0	0.000000	0	0	
